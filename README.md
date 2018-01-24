@@ -14,4 +14,4 @@ We have considered other domains, and may shift focus to them in the situation t
 
 ### Project Milestones
 
-- [P0: Team Contract](https://drive.google.com/file/d/1xIxyQoHf9eerxOnhPu123Wj1uhC9am9J/view?usp=sharing)
+- [P0: Team Contract](https://drive.google.com/file/d/1ZMZ3jg6MRVByfcDWPPFK9EGecPSO80vM/view?usp=sharing)
