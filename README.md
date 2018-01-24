@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+## Team B-3
+The Senate
 
-You can use the [editor on GitHub](https://github.com/tarkin96/4140Spring2018/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Team Members
+- Wade King
+- Carolina McGlauflin
+- Zebulon Morgan
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Problem Domain Synopsis
 
-### Markdown
+We have decided to focus on the high-level domain of trust and engagement in local government. This problem involves a lack of participation of citizens in local government, and a general lack of awareness that many citizens show for the motions of their town/county councils. The goal for any solutions to this problem is to encourage higher attendance at public local government hearings and elections, increase interaction with officials, and promote better representation of constituencies.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+We have considered other domains, and may shift focus to them in the situation that our current domain fails to provide substantive exploration. Our back up ideas include educating different age brackets on topics in which they are inexperienced, and addressing disability issues such as color blindness and deafness.
 
-```markdown
-Syntax highlighted code block
+### Project Milestones
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tarkin96/4140Spring2018/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- [P0: Team Contract](https://drive.google.com/file/d/1xIxyQoHf9eerxOnhPu123Wj1uhC9am9J/view?usp=sharing)
