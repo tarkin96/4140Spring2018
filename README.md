@@ -18,4 +18,4 @@ We have considered other domains, and may shift focus to them in the situation t
 
 - [P1: Understanding the Problem](https://drive.google.com/file/d/1fZ7lIrlh_h763cpkc02viT7Z3QLlTmd5/view?usp=sharing)
 
-- [P2: Designing Drastically Different Designs] (https://docs.google.com/document/d/1-VqJHY6bUUVTYFDmLrYC3XKrGY4-mPtOA45WvHOuhmo/edit?usp=sharing)
+- [P2: Designing Drastically Different Designs](https://docs.google.com/document/d/1-VqJHY6bUUVTYFDmLrYC3XKrGY4-mPtOA45WvHOuhmo/edit?usp=sharing)
