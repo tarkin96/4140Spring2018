@@ -1,7 +1,7 @@
 <?php
-   define('DB_SERVER', 'localhost:3036');
-   define('DB_USERNAME', 'root');
-   define('DB_PASSWORD', 'rootpassword');
-   define('DB_DATABASE', 'database');
+   define('DB_SERVER', 'mysql1.cs.clemson.edu');
+   define('DB_USERNAME', 'jwk');
+   define('DB_PASSWORD', 'cpsc!4140');
+   define('DB_DATABASE', 'TwitchDoesTownHall');
    $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 ?>
