@@ -24,7 +24,7 @@
 				//session_register("myusername");
 				$_SESSION['login_user'] = $inputusername;
 				echo "wade sucks";
-				header("location: welcome.php");
+				header("location: home_page.php");
 			}
 			else {
 				$error = "Your Login Name or Password is invalid";
