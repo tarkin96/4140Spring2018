@@ -13,8 +13,8 @@ echo "this is the homepage"
 
 
 
-<?php if ($_SESSION['login_user']) : 
-	echo "Welcome, '$SESSION['login_user']'!";
+<?php if (array_key_exists('login_user', $_SESSION)) : 
+	echo "Welcome, {$SESSION['login_user']}!";
 ?>
 
 <p><a href="http://webapp.cs.clemson.edu/~jwk/logout.php">Logout</a></p>
