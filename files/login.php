@@ -3,22 +3,26 @@
 	session_start();
 	$error = "";
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
-		// username and password sent from form 
+		// username and password sent from form's POST
+		$inputusername = mysqli_real_escape_string($db,$_POST['username']);
+		$inputpassword = mysqli_real_escape_string($db,$_POST['password']); 
 
-		$myusername = mysqli_real_escape_string($db,$_POST['username']);
-		$mypassword = mysqli_real_escape_string($db,$_POST['password']); 
+		//just the query string
+		$find_login_query = "SELECT * FROM users WHERE username = '$inputusername' and password = '$inputpassword'";
+		//the actual query, passing in the query string and the db to connect to
+		$result = mysqli_query($db,$find_login_query);
 
-		$sql = "SELECT * FROM users WHERE username = '$myusername' and password = '$mypassword'";
-		$result = mysqli_query($db,$sql);
-
+		//if there is a result from the query
 		if ($result) {
-			
+			//get the information in the result
 			$row = mysqli_fetch_array($result,MYSQLI_ASSOC); 
+			//get info to see if user is active, not currently used
 			$active = $row['active'];
+			//get number of results from query
 			$count = mysqli_num_rows($result);
 			if ($count == 1) {
 				//session_register("myusername");
-				$_SESSION['login_user'] = $myusername;
+				$_SESSION['login_user'] = $inputusername;
 				echo "wade sucks";
 				header("location: welcome.php");
 			}
