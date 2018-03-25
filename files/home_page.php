@@ -20,9 +20,13 @@ echo "this is the homepage"
 <p><a href="http://webapp.cs.clemson.edu/~jwk/logout.php">Logout</a></p>
 
 <?php else : ?>
-<p><a href="http://webapp.cs.clemson.edu/~jwk/login.php">Login</a></p>
+<p><a href="http://webapp.cs.clemson.edu/~jwk/login.php">Login as a Viewer</a></p>
 or
-<p><a href="http://webapp.cs.clemson.edu/~jwk/create_account.php">Create Account</a></p>
+<p><a href="http://webapp.cs.clemson.edu/~jwk/login.php">Login as a Streamer</a></p>
+or
+<p><a href="http://webapp.cs.clemson.edu/~jwk/create_account.php">Create a Viewer Account</a></p>
+or
+<p><a href="http://webapp.cs.clemson.edu/~jwk/create_account.php">Create a Streamer Account</a></p>
 <?php endif; ?>
 
 </body>
