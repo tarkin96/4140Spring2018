@@ -31,7 +31,7 @@ href="mystyles.css">
   <a href="#constituencies">Constituencies</a>
   <a href="#account">Account</a>
   <a href="#help">Help</a>
-  <a href="logout.php">Logout</a>
+  <a class="link" href="logout.php">Logout</a>
   <input type="text" placeholder="Search">
   <button type="submit"><i class="fa fa-search"></i></button>
 </div>
