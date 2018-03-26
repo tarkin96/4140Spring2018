@@ -1,7 +1,6 @@
 .topnav {
   overflow: hidden;
   background-color: #333;
-  height: 40px;
 }
 
 .topnav a {
@@ -36,9 +35,8 @@
     padding: 6px;
     border: none;
     margin-top: 8px;
-    margin-bottom: 8px;
     margin-right: 16px;
-    height: 30px;
+    font-size: 17px;
 }
 
 .topnav button {
@@ -47,10 +45,9 @@
   margin-top: 8px;
   margin-right: 0px;
   background: #ddd;
-  font-size: 13px;
+  font-size: 17px;
   border: none;
   cursor: pointer;
-  height: 30px;
 }
 
 .topnav button:hover {
