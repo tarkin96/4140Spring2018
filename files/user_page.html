@@ -1,21 +1,169 @@
 <!DOCTYPE html>
 <html>
+<head>
+
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/
+		font-awesome.min.css">
+
+<style>
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.topnav button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 0px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav button:hover {
+  background: #ccc;
+}
+
+.middle {
+  background-color: #333;
+}
+
+.middle .vertical-menu {
+    margin-top: 40px;
+    float: left;
+    width: 250px;
+}
+
+.middle .vertical-menu a {
+    background-color: #333;
+    color: white;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.middle .vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.middle .vertical-menu a.label {
+    background-color: #eee;
+    color: black;
+}
+
+.middle .vertical-menu .block {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.middle .vertical-menu service {
+    float: right;
+}
+
+.middle .stream {
+    float: left;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+
+</style>
+</head>
+
 <body>
 
-<iframe 
-        src="http://player.twitch.tv/?channel=thijshs" 
-        height="720" 
-        width="1280" 
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">Browse</a>
+  <a href="#archive">Archive</a>
+  <a href="#officials">Officials</a>
+  <a href="#constituencies">Constituencies</a>
+  <a href="#account">Account</a>
+  <a href="#help">Help</a>
+  <input type="text" placeholder="Search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</div>
+
+<div class="middle">
+  <div class="vertical-menu">
+    <a href="#recserv" class="label">Recommended Services</a>
+    <div class="block">
+	<service href="#senate">Senate Hearing</service>
+	<div class="photo">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Senatefloor.jpg" alt="Senate Hearing" width="100" height="60"></div>
+    </div>
+    <div class="block">
+	<service href="#townhall">Town Hall<br>Meeting</service>
+	<div class="photo">
+    <img src="https://media.glassdoor.com/l/44/eb/14/98/town-hall-meeting-in-action.jpg"
+alt="Town Hall Meeting" width="100" height="60""></div>
+    </div>
+    <div class="block">
+	<service href="#debate">Debate</service>
+	<div class="photo">
+    <img src="https://media.npr.org/assets/img/2012/10/03/first_debate1-e2ffc0e8d70fdb7120584d533f027326b05e61c0-s900-c85.jpg"
+alt="Debate" width="100" height="60""></div>
+    </div>
+    <a href="#pubserv">Other Public Services</a>
+    <a href="#groupstreams">Streams by Groups</a>
+  </div>
+    
+  <div class="stream">
+    <iframe 
+        src="http://player.twitch.tv/?channel=Ninja" 
+        height="432" 
+        width="768" 
         frameborder="0" 
         scrolling="no"
         allowfullscreen="true">
-</iframe>
+    </iframe>
+  </div>
 
-<script>
+  <div class="chat">
 
-<script type="text/javascript" src="http://www.easypolls.net/ext/scripts/emPoll.js?p=5a9ff02ae4b0cf4bc11d5e10"></script><a class="OPP-powered-by" href="http://www.objectplanet.com/opinio/" style="text-decoration:none;"><div style="font: 9px arial; color: gray;">survey service</div></a>
+  </div>
+</div>
 
-</script>
+<div class="bottom">
+  <div class="poll">
+
+  </div>
+</div>
 
 </body>
+
 </html>
