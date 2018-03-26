@@ -1,8 +1,7 @@
 <?php
 	session_start();
 	if (!array_key_exists('login_user', $_SESSION)) : 
-		header("http://webapp.cs.clemson.edu/~jwk/login.php");
-		
+		header("Location: http://webapp.cs.clemson.edu/~jwk/login.php");
 	else :
 		echo "Welcome, {$_SESSION['login_user']}!";
 	endif;
@@ -32,6 +31,7 @@ href="mystyles.css">
   <a href="#constituencies">Constituencies</a>
   <a href="#account">Account</a>
   <a href="#help">Help</a>
+  <a href="logout.php">Logout</a>
   <input type="text" placeholder="Search">
   <button type="submit"><i class="fa fa-search"></i></button>
 </div>
