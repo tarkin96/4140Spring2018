@@ -19,6 +19,8 @@ echo "this is the homepage"
 
 <p><a href="http://webapp.cs.clemson.edu/~jwk/logout.php">Logout</a></p>
 
+<p><a href="http://webapp.cs.clemson.edu/~jwk/user_page.html">Here is a link to a stream</a></p>
+
 <?php else : ?>
 <p><a href="http://webapp.cs.clemson.edu/~jwk/login.php">Login as a Viewer</a></p>
 or
