@@ -41,7 +41,7 @@ session_start();
 				
 			}
 			else {
-				//$error = "Your Login Name or Password is invalid";
+				$error = "This account already exists! Try again.";
 				
 			}
 		}
