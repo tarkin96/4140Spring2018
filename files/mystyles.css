@@ -77,12 +77,14 @@
 }
 
 .middle .vertical-menu a.label {
-    background-color: #eee;
+	border: 1px solid #333;
+    background-color: #999;
     color: black;
 }
 
 .middle .vertical-menu .block {
-    background-color: #eee;
+	border: 1px solid #333;
+    background-color: #999;
     color: black;
     display: block;
     padding: 12px;

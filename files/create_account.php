@@ -13,7 +13,7 @@ session_start();
 		$find_login_query = "SELECT * FROM users WHERE username = '$inputusername' and password = '$inputpassword'";
 		
 		//the actual query, passing in the query string and the db to connect to
-		$result = mysqli_query($db,$add_login_query);
+		$result = mysqli_query($db,$find_login_query);
 
 		//if there is a result from the query
 		if ($result) {
