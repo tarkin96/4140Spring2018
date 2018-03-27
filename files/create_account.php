@@ -7,11 +7,13 @@ session_start();
 		// username and password sent from form's POST
 		$inputusername = mysqli_real_escape_string($db,$_POST['username']);
 		$inputpassword = mysqli_real_escape_string($db,$_POST['password']); 
+		$inputpasswordconf = mysqli_real_escape_string($db,$_POST['password2']);
 
 		//just the query string
 		$find_login_query = "SELECT * FROM users WHERE username = '$inputusername' and password = '$inputpassword'";
+		
 		//the actual query, passing in the query string and the db to connect to
-		$result = mysqli_query($db,$find_login_query);
+		$result = mysqli_query($db,$add_login_query);
 
 		//if there is a result from the query
 		if ($result) {
@@ -21,18 +23,21 @@ session_start();
 			$active = $row['active'];
 			//get number of results from query
 			$count = mysqli_num_rows($result);
-			if ($count == 1) {
+			if ($count == 0) {
 				//session_register("myusername");
-				$_SESSION['login_user'] = $inputusername;
-				echo "wade sucks";
-				header("location: home_page.php");
+				//$_SESSION['login_user'] = $inputusername;
+				//echo "wade sucks";
+				$add_login_query = "INSERT INTO users VALUES ('$inputusername', '$inputpassword')";
+				header("location: login.php");
 			}
 			else {
-				$error = "Your Login Name or Password is invalid";
+				//$error = "Your Login Name or Password is invalid";
+				
 			}
 		}
 		else {
 			echo "something went horribly wrong";
+			
 		}
 
 	}
