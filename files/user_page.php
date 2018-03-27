@@ -77,12 +77,14 @@ alt="Debate" width="100" height="60""></div>
         <div style="clear:both"></div>
     </div>
      
-    <div id="chatbox"></div>
+    <div id="chatbox">
      
     <form name="message" action="">
         <input name="usermsg" type="text" id="usermsg" size="63" />
         <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
     </form>
+    
+    </div>
   </div>
 </div>
 

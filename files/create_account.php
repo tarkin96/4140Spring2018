@@ -28,6 +28,7 @@ session_start();
 				//$_SESSION['login_user'] = $inputusername;
 				//echo "wade sucks";
 				$add_login_query = "INSERT INTO users VALUES ('$inputusername', '$inputpassword')";
+				
 				header("location: login.php");
 			}
 			else {
