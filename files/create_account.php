@@ -28,8 +28,17 @@ session_start();
 				//$_SESSION['login_user'] = $inputusername;
 				//echo "wade sucks";
 				$add_login_query = "INSERT INTO users VALUES ('$inputusername', '$inputpassword')";
+				$add_account_result = mysqli_query($db,$add_login_query);
+				if ($add_account_result) {
+					//$add_account_result_row = mysqli_fetch_array($add_account_result,MYSQLI_ASSOC);
+					//$row_count = mysqli_num_rows($add_account_result);
+					
+					//if ($row_count == 1) {
+						echo "account added";
+						//header("location: login.php");
+					//} 
+				}
 				
-				header("location: login.php");
 			}
 			else {
 				//$error = "Your Login Name or Password is invalid";
