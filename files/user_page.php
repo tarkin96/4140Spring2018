@@ -21,17 +21,16 @@ href="mystyles.css">
 </style>
 </head>
 
-<body>
+<body style="background-color:#444">
 
 <div class="topnav">
-  <a class="active" href="http://webapp.cs.clemson.edu/~jwk/home_page.php">Home</a>
+  <a class="active" href="#home">Home</a>
   <a href="#news">Browse</a>
   <a href="#archive">Archive</a>
   <a href="#officials">Officials</a>
   <a href="#constituencies">Constituencies</a>
   <a href="#account">Account</a>
   <a href="#help">Help</a>
-  <a class="link" href="logout.php">Logout</a>
   <input type="text" placeholder="Search">
   <button type="submit"><i class="fa fa-search"></i></button>
 </div>
@@ -71,14 +70,25 @@ alt="Debate" width="100" height="60""></div>
     </iframe>
   </div>
 
-  <div class="chat">
-
+  <div id="wrapper">
+    <div id="menu">
+        <p class="welcome">Welcome, <b></b></p>
+        <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
+        <div style="clear:both"></div>
+    </div>
+     
+    <div id="chatbox"></div>
+     
+    <form name="message" action="">
+        <input name="usermsg" type="text" id="usermsg" size="63" />
+        <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+    </form>
   </div>
 </div>
 
 <div class="bottom">
   <div class="poll">
-
+     <form method="post" action="https://poll.pollcode.com/17834677"><div style="background-color:#999;padding:2px;width:175px;font-family:Arial;font-size:small;color:#000;"><div style="padding:2px 0px 4px 2px;"><strong>Do you like pie?</strong></div><input type="radio" name="answer" value="1" id="answer178346771" style="float:left;" /><label for="answer178346771" style="float:left;width:150px;">Yes</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer178346772" style="float:left;" /><label for="answer178346772" style="float:left;width:150px;">No</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form>
   </div>
 </div>
 
