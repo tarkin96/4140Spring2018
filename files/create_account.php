@@ -5,50 +5,54 @@ session_start();
 	$error = "";
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
 		// username and password sent from form's POST
+		
+
 		$inputusername = mysqli_real_escape_string($db,$_POST['username']);
 		$inputpassword = mysqli_real_escape_string($db,$_POST['password']); 
 		$inputpasswordconf = mysqli_real_escape_string($db,$_POST['password2']);
-
-		//just the query string
-		$find_login_query = "SELECT * FROM users WHERE username = '$inputusername' and password = '$inputpassword'";
 		
-		//the actual query, passing in the query string and the db to connect to
-		$result = mysqli_query($db,$find_login_query);
-
-		//if there is a result from the query
-		if ($result) {
-			//get the information in the result
-			$row = mysqli_fetch_array($result,MYSQLI_ASSOC); 
-			//get info to see if user is active, not currently used
-			//$active = $row['active'];
-			//get number of results from query
-			$count = mysqli_num_rows($result);
-			if ($count == 0) {
-				//session_register("myusername");
-				//$_SESSION['login_user'] = $inputusername;
-				//echo "wade sucks";
-				$add_login_query = "INSERT INTO users VALUES ('$inputusername', '$inputpassword')";
-				$add_account_result = mysqli_query($db,$add_login_query);
-				if ($add_account_result) {
-					//$add_account_result_row = mysqli_fetch_array($add_account_result,MYSQLI_ASSOC);
-					//$row_count = mysqli_num_rows($add_account_result);
-					
-					//if ($row_count == 1) {
-						echo "account added";
-						//header("location: login.php");
-					//} 
-				}
+		if($inputpassword != $inputpasswordconf) {
+				//$inputusername = mysqli_real_escape_string($db,$_POST['username']);
+				//$inputpassword = mysqli_real_escape_string($db,$_POST['password']); 
+				//$inputpasswordconf = mysqli_real_escape_string($db,$_POST['password2']);
 				
-			}
-			else {
-				$error = "This account already exists! Try again.";
+				$error = "Passwords do not match! Try again.";
 				
-			}
 		}
 		else {
-			echo "something went horribly wrong";
+			//just the query string
+			$find_login_query = "SELECT * FROM users WHERE username = '$inputusername'";
 			
+			//the actual query, passing in the query string and the db to connect to
+			$result = mysqli_query($db,$find_login_query);
+
+			//if there is a result from the query
+			if ($result) {
+				//get the information in the result
+				$row = mysqli_fetch_array($result,MYSQLI_ASSOC); 
+				//get number of results from query
+				$count = mysqli_num_rows($result);
+				if ($count == 0) {
+					$add_login_query = "INSERT INTO users VALUES ('$inputusername', '$inputpassword')";
+					$add_account_result = mysqli_query($db,$add_login_query);
+					if ($add_account_result) {
+						//echo "account added";
+						header("Location: login.php");
+					}
+					
+				}
+				else {
+					$error = "This username already exists! Try again.";
+					
+				}
+			}
+			else {
+				$error = "something went horribly wrong";
+				
+			}
 		}
+
+
 
 	}
 
