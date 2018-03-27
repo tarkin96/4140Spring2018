@@ -19,9 +19,8 @@ session_start();
 		if ($result) {
 			//get the information in the result
 			$row = mysqli_fetch_array($result,MYSQLI_ASSOC); 
-			echo $row;
 			//get info to see if user is active, not currently used
-			$active = $row['active'];
+			//$active = $row['active'];
 			//get number of results from query
 			$count = mysqli_num_rows($result);
 			if ($count == 0) {
