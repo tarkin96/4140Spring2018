@@ -78,6 +78,7 @@
 .middle .vertical-menu a.stream {
     background-color: #999;
     color: black;
+	vertical-align: middle;
 }
 
 .middle .vertical-menu a:hover {
@@ -105,11 +106,11 @@
 
 input { font:12px arial; }
   
-a {
+a.other {
     color: white;
     text-decoration:none; }
   
-    a:hover { text-decoration:underline; }
+    a.other:hover { text-decoration:underline; }
   
 #wrapper, #loginform {
     float: right;
