@@ -20,7 +20,7 @@ session_start();
 				
 		}
 		elseif ($inputpassword == "" or $inputpasswordconf == "" or $inputusername == "") {
-			$error = "You must fill every field to continue."
+			$error = "You must fill every field to continue.";
 		}
 		else {
 			//just the query string
