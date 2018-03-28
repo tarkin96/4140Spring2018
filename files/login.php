@@ -1,7 +1,6 @@
 <?php
 	include("config.php");
 	include("templates/page_template.php");
-	session_start();
 	$error = "";
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
 		// username and password sent from form's POST
@@ -74,14 +73,14 @@
 				</form>
 
 				<div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
-
+				
 			</div>
 
 		</div>
-
+		<a href="create_account.php">Create and Account</a>
 	</div>
 	
-	<a href="create_account.php">Create and Account</a>
+	
 
 </body>
 </html>
