@@ -19,6 +19,9 @@ session_start();
 				$error = "Passwords do not match! Try again.";
 				
 		}
+		elseif ($inputpassword == "" or $inputpasswordconf == "" or $inputusername == "") {
+			$error = "You must fill every field to continue."
+		}
 		else {
 			//just the query string
 			$find_login_query = "SELECT * FROM users WHERE username = '$inputusername'";
