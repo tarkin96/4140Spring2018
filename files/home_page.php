@@ -73,33 +73,6 @@ echo "this is the homepage"
     <a href="#groupstreams">Streams by Groups</a>
 </div>
 
-<div id="wrapper">
-	<div id="menu">
-		<p class="welcome">Welcome, <b></b></p>
-		<p class="logout"><a id="exit" href="#">Exit Chat</a></p>
-		<div style="clear:both"></div>
-	</div>
-</div>
-
-
-<?php if (array_key_exists('login_user', $_SESSION)) : 
-	echo "Welcome, {$_SESSION['login_user']}!";
-?>
-
-<p></p>
-
-<p><a href="http://webapp.cs.clemson.edu/~jwk/user_page.php">Here is a link to a stream</a></p>
-
-<?php else : ?>
-<p><a href="http://webapp.cs.clemson.edu/~jwk/login.php">Login as a Viewer</a></p>
-or
-<p><a href="http://webapp.cs.clemson.edu/~jwk/login.php">Login as a Streamer</a></p>
-or
-<p><a href="http://webapp.cs.clemson.edu/~jwk/create_account.php">Create a Viewer Account</a></p>
-or
-<p><a href="http://webapp.cs.clemson.edu/~jwk/create_account.php">Create a Streamer Account</a></p>
-<?php endif; ?>
-
 </body>
 
 </html>
