@@ -75,6 +75,14 @@
     text-decoration: none;
 }
 
+.middle .vertical-menu a.stream {
+    background-color: #333;
+    color: black;
+    display: inline-block;
+    padding: 12px;
+    text-decoration: none;
+}
+
 .middle .vertical-menu a:hover {
     background-color: #ccc;
 }
