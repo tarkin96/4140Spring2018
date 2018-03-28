@@ -78,9 +78,6 @@
 .middle .vertical-menu a.stream {
     background-color: #999;
     color: black;
-    display: inline-block;
-    padding: 12px;
-    text-decoration: none;
 }
 
 .middle .vertical-menu a:hover {
