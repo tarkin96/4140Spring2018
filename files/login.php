@@ -1,5 +1,6 @@
 <?php
 	include("config.php");
+	include("templates/page_template.html");
 	session_start();
 	$error = "";
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
