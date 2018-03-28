@@ -70,8 +70,8 @@ echo "this is the homepage"
 			</img>
 		</div>
     </div>
-    <a href="#pubserv">Other Public Services</a>
-    <a href="#groupstreams">Streams by Groups</a>
+    <a class="listed" href="#pubserv">Other Public Services</a>
+    <a class="listed" href="#groupstreams">Streams by Groups</a>
 </div>
 
 </body>
