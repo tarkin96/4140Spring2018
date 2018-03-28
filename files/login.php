@@ -1,6 +1,6 @@
 <?php
 	include("config.php");
-	include("templates/page_template.html");
+	//include("templates/page_template.html");
 	session_start();
 	$error = "";
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -60,12 +60,6 @@
 </head>
 
 <body bgcolor = "#FFFFFF">
-
-	<div id="new-header">
-		<script>
-			$("#new-header").load("templates/page_template.html");
-		</script>
-	</div>
 
 	<div align = "center">
 		<div style = "width:300px; border: solid 1px #333333; " align = "left">
