@@ -55,7 +55,7 @@ echo "this is the homepage"
 		</div>
 	</div>
     <div class="block">
-		<service href="#townhall">Town Hall<br>Meeting</service>
+		<service href="user_page.php">Town Hall<br>Meeting</service>
 		<div class="photo">
 			<img src="https://media.glassdoor.com/l/44/eb/14/98/town-hall-meeting-in-action.jpg"
 				alt="Town Hall Meeting" width="100" height="60">
