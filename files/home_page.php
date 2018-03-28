@@ -21,7 +21,7 @@ include("templates/page_template.php");
     <a href="#recserv" class="cascade">Recommended Services</a>
     <div class="block">
 		<div class="photo">
-			<a style="float:right" href="user_page.php">Senate Hearing</a>
+			<a class="recstream" href="user_page.php">Senate Hearing</a>
 			<img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Senatefloor.jpg" alt="Senate Hearing" width="100" height="60">
 			</img>
 		</div>

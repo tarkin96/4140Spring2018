@@ -111,6 +111,13 @@ a.other {
     text-decoration:none; }
   
     a.other:hover { text-decoration:underline; }
+	
+a.recstream {
+    background-color: #999;
+    color: black;
+	vertical-align: middle;
+	float: right;
+}
   
 #wrapper, #loginform {
     float: right;
