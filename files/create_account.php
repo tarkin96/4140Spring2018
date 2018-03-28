@@ -11,16 +11,16 @@ session_start();
 		$inputpassword = mysqli_real_escape_string($db,$_POST['password']); 
 		$inputpasswordconf = mysqli_real_escape_string($db,$_POST['password2']);
 		
-		if($inputpassword != $inputpasswordconf) {
+		if ($inputpassword == "" or $inputpasswordconf == "" or $inputusername == "") {
+			$error = "You must fill every field to continue.";
+		}
+		elseif($inputpassword != $inputpasswordconf) {
 				//$inputusername = mysqli_real_escape_string($db,$_POST['username']);
 				//$inputpassword = mysqli_real_escape_string($db,$_POST['password']); 
 				//$inputpasswordconf = mysqli_real_escape_string($db,$_POST['password2']);
 				
 				$error = "Passwords do not match! Try again.";
 				
-		}
-		elseif ($inputpassword == "" or $inputpasswordconf == "" or $inputusername == "") {
-			$error = "You must fill every field to continue.";
 		}
 		else {
 			//just the query string
