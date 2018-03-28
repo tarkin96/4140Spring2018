@@ -62,7 +62,7 @@
 
 	<div id="new-header">
 		<script>
-			$("#new-header").load("home_page.php");
+			$("#new-header").load("templates/page_template.html");
 		</script>
 	</div>
 
@@ -73,8 +73,8 @@
 			<div style = "margin:30px">
 
 				<form action = "" method = "post">
-					<label>Username  :</label><input type = "text" name = "username" class = "box"/><br /><br />
-					<label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
+					<label>Username: </label><input type = "text" name = "username" class = "box"/><br /><br />
+					<label>Password: </label><input type = "password" name = "password" class = "box" /><br/><br />
 					<input type = "submit" value = " Submit "/><br />
 				</form>
 
