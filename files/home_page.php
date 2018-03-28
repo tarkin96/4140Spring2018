@@ -20,8 +20,9 @@ include("templates/page_template.php");
   <div class="vertical-menu">
     <a href="#recserv" class="cascade">Recommended Services</a>
     <div class="block">
-		<a class="stream" href="user_page.php">Senate Hearing</a>
+		
 		<div class="photo">
+			<a class="stream" href="user_page.php">Senate Hearing</a>
 			<img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Senatefloor.jpg" alt="Senate Hearing" width="100" height="60">
 			</img>
 		</div>
