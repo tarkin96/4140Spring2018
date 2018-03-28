@@ -1,6 +1,7 @@
 .topnav {
   overflow: hidden;
   background-color: #333;
+  margin-bottom: 40px;
 }
 
 .topnav a {
@@ -12,21 +13,13 @@
     font-size: 17px;
 }
 
-.topnav a.link {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-}
-
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #bd0000;
   color: white;
 }
 
@@ -54,19 +47,16 @@
   background: #ccc;
 }
 
+.topnav a.logout { float: right; }
+
 .middle {
   background-color: #333;
 }
 
 .middle .vertical-menu {
-    margin-top: 40px;
+    margin-bottom: 200px;
     float: left;
     width: 250px;
-}
-
-.middle .vertical-menu a {
-	float: right;
-	
 }
 
 .middle .vertical-menu a.listed {
@@ -81,14 +71,8 @@
     background-color: #ccc;
 }
 
-.middle .vertical-menu a.label {
-	float: right;
-    background-color: #999;
-    color: black;
-}
-
 .middle .vertical-menu .block {
-	border: 1px solid #333;
+    border: 1px solid #333;
     background-color: #999;
     color: black;
     display: block;
@@ -103,7 +87,7 @@
 .middle .stream {
     float: left;
     margin-left: 200px;
-    margin-top: 40px;
+    margin-right: 150px;
 }
 
 input { font:12px arial; }
@@ -116,8 +100,6 @@ a {
   
 #wrapper, #loginform {
     float: right;
-    margin:0 auto;
-    margin-top: 40px;
     padding-bottom:25px;
     background:#333;
     color: white;
@@ -129,7 +111,7 @@ a {
     #loginform p { margin: 5px; }
   
 #chatbox {
-    text-align: left;
+    text-align:right;
     margin:0 auto;
     margin-bottom:25px;
     padding:10px;
@@ -139,11 +121,13 @@ a {
     overflow:auto; }
   
 #usermsg {
-    width:395px;
+    width:405px;
     background: #999;
+    float: left;
+    margin-left: 25px;
 }
   
-#submit { width: 60px; }
+#submit { width: 60px; float: right}
   
 .error { color: #ff0000; }
   
@@ -155,5 +139,44 @@ a {
   
 .msgln { margin:0 0 2px 0; }
 
-.bottom .poll {
-    margin-top: 600px;
+#streamlabel {
+   float: left;
+   color: white;
+   margin-left: 375px;
+}
+
+.eventdesc {
+	border: 10px solid #333;
+	width: 1430px;
+	height: 75px;
+	background: #999;
+	margin-left: 445px;
+	margin-top: 575px;
+	float: top;
+}
+
+.eventdesc desc {
+	margin-left: 15px;
+	margin-top:  60px;
+	color: #333;
+}
+
+.botmiddle {
+	border: 20px solid #333;
+	width: 740px;
+	height: 250px;
+	background: #999;
+	margin-left: 445px;
+	float: top;
+}
+
+.botmiddle .agenda {
+	border: 3px solid #333;
+	width: 737px;
+	height: 75px;
+	background: #999;
+}
+
+.botmiddle .agenda desc {
+	color: #333;
+}

@@ -46,7 +46,7 @@ echo "this is the homepage"
 
 <div class="middle">
   <div class="vertical-menu">
-    <a href="#recserv" class="listed">Recommended Services</a>
+    <a href="#recserv" class="label">Recommended Services</a>
     <div class="block">
 		<a href="user_page.php">Senate Hearing</a>
 		<div class="photo">
@@ -55,7 +55,7 @@ echo "this is the homepage"
 		</div>
 	</div>
     <div class="block">
-		<service href="user_page.php">Town Hall<br>Meeting</service>
+		<service href="#townhall">Town Hall<br>Meeting</service>
 		<div class="photo">
 			<img src="https://media.glassdoor.com/l/44/eb/14/98/town-hall-meeting-in-action.jpg"
 				alt="Town Hall Meeting" width="100" height="60">
@@ -70,8 +70,8 @@ echo "this is the homepage"
 			</img>
 		</div>
     </div>
-    <a class="listed" href="#pubserv">Other Public Services</a>
-    <a class="listed" href="#groupstreams">Streams by Groups</a>
+    <a href="#pubserv">Other Public Services</a>
+    <a href="#groupstreams">Streams by Groups</a>
 </div>
 
 </body>
