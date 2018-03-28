@@ -22,7 +22,7 @@ include("templates/page_template.php");
     <div class="block">
 		
 		<div class="photo">
-			<a href="user_page.php">Senate Hearing</a>
+			<a style="float:right" href="user_page.php">Senate Hearing</a>
 			<img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Senatefloor.jpg" alt="Senate Hearing" width="100" height="60">
 			</img>
 		</div>
