@@ -6,6 +6,11 @@ echo "this is the homepage"
 <html>
 
 <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<title>Twitch Does Town Hall</title>
   
 	<link rel="stylesheet" 
@@ -13,10 +18,15 @@ echo "this is the homepage"
 
 	<link rel="stylesheet"
 	href="mystyles.css">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.cs">
+
 </head>
 
 <body style="background-color:#444">
 	
+<script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <div class="topnav">
 	<a class="active" href="home_page.php">Home</a>
@@ -30,12 +40,12 @@ echo "this is the homepage"
 		if (array_key_exists('login_user', $_SESSION)) {
 			//echo "Welcome, {$_SESSION['login_user']}!";
 	?>
-			<a class="link" href="logout.php">Logout</a>
+			<a class="righty" href="logout.php">Logout</a>
 	<?php
 		}
 		else {
 	?>
-			<a class="link" href="login.php">Login, or Create an Account</a>
+			<a class="righty" href="login.php">Login, or Create an Account</a>
 	<?php
 		}
 	?>
@@ -46,7 +56,7 @@ echo "this is the homepage"
 
 <div class="middle">
   <div class="vertical-menu">
-    <a href="#recserv" class="label">Recommended Services</a>
+    <a href="#recserv" class="cascade">Recommended Services</a>
     <div class="block">
 		<a href="user_page.php">Senate Hearing</a>
 		<div class="photo">
@@ -70,8 +80,8 @@ echo "this is the homepage"
 			</img>
 		</div>
     </div>
-    <a href="#pubserv">Other Public Services</a>
-    <a href="#groupstreams">Streams by Groups</a>
+    <a class="cascade" href="#pubserv">Other Public Services</a>
+    <a class="cascade" href="#groupstreams">Streams by Groups</a>
 </div>
 
 </body>
