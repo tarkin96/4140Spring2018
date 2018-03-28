@@ -1,5 +1,6 @@
 <?php
 include("config.php");
+include("templates/page_template.php");
 session_start();
 
 	$error = "";
@@ -87,7 +88,7 @@ session_start();
 	
       <div align = "center">
          <div style = "width:300px; border: solid 1px #333333; " align = "left">
-            <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Login</b></div>
+            <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Create Account</b></div>
 				
             <div style = "margin:30px">
                
