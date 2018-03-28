@@ -34,17 +34,17 @@
 
 .topnav input[type=text] {
     float: right;
-    padding: 15px;
+    padding: 5px;
     border: none;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-top: 10px;
+    margin-right: 15px;
     font-size: 17px;
 }
 
 .topnav button {
   float: right;
-  padding: 15px;
-  margin-top: 20px;
+  padding: 0px;
+  margin-top: 10px;
   margin-right: 0px;
   background: #ddd;
   border: none;
