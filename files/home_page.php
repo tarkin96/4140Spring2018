@@ -46,9 +46,9 @@ echo "this is the homepage"
 
 <div class="middle">
   <div class="vertical-menu">
-    <a href="#recserv" class="label">Recommended Services</a>
+    <a href="#recserv" class="listed">Recommended Services</a>
     <div class="block">
-		<a href="user_page.php">Senate Hearing</a>
+		<a class="label" href="user_page.php">Senate Hearing</a>
 		<div class="photo">
 			<img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Senatefloor.jpg" alt="Senate Hearing" width="100" height="60">
 			</img>
