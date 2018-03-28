@@ -117,6 +117,10 @@ a.recstream {
     color: black;
 	vertical-align: middle;
 	float: right;
+	text-decoration: none;
+}
+a.recstream:hover {
+	color: white;
 }
   
 #wrapper, #loginform {
