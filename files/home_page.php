@@ -18,15 +18,29 @@ echo "this is the homepage"
 <body>
 
 <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">Browse</a>
-  <a href="#archive">Archive</a>
-  <a href="#officials">Officials</a>
-  <a href="#constituencies">Constituencies</a>
-  <a href="#account">Account</a>
-  <a href="#help">Help</a>
-  <input type="text" placeholder="Search">
-  <button type="submit"><i class="fa fa-search"></i></button>
+	<a class="active" href="home_page.php">Home</a>
+	<a href="#news">Browse</a>
+	<a href="#archive">Archive</a>
+	<a href="#officials">Officials</a>
+	<a href="#constituencies">Constituencies</a>
+	<a href="#account">Account</a>
+	<a href="#help">Help</a>
+	<?php
+		if (array_key_exists('login_user', $_SESSION)) {
+			//echo "Welcome, {$_SESSION['login_user']}!";
+	?>
+			<a class="link" href="logout.php">Logout</a>
+	<?php
+		}
+		else {
+	?>
+			<a class="link" href="login.php">Login</a>
+	<?php
+		}
+	?>
+	
+	<input type="text" placeholder="Search">
+	<button type="submit"><i class="fa fa-search"></i></button>
 </div>
 
 <div class="middle">
@@ -72,7 +86,7 @@ echo "this is the homepage"
 	echo "Welcome, {$_SESSION['login_user']}!";
 ?>
 
-<p><a href="http://webapp.cs.clemson.edu/~jwk/logout.php">Logout</a></p>
+<p></p>
 
 <p><a href="http://webapp.cs.clemson.edu/~jwk/user_page.php">Here is a link to a stream</a></p>
 
