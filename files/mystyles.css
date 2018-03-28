@@ -64,6 +64,11 @@
     width: 250px;
 }
 
+.middle .vertical-menu a {
+	float: right;
+	
+}
+
 .middle .vertical-menu a.listed {
     background-color: #333;
     color: white;
