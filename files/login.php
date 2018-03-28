@@ -80,6 +80,8 @@
 		</div>
 
 	</div>
+	
+	<a href="create_account.php">Create and Account</a>
 
 </body>
 </html>
