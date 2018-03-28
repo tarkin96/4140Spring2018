@@ -15,7 +15,8 @@ echo "this is the homepage"
 	href="mystyles.css">
 </head>
 
-<body>
+<body style="background-color:#444">
+	
 
 <div class="topnav">
 	<a class="active" href="home_page.php">Home</a>
