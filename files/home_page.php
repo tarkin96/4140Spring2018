@@ -62,7 +62,6 @@ include("config.php");
 				$chat_result = mysqli_query($db,$grab_chat_query);
 					 
 				echo $chat_results;
-			}
 			?>
 		</div>
 		
