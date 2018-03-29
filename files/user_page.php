@@ -56,8 +56,8 @@ alt="Town Hall Meeting" width="100" height="60""></div>
     <img src="https://media.npr.org/assets/img/2012/10/03/first_debate1-e2ffc0e8d70fdb7120584d533f027326b05e61c0-s900-c85.jpg"
 alt="Debate" width="100" height="60""></div>
     </div>
-    <a class="listed" href="#pubserv">Other Public Services</a>
-    <a class="listed" href="#groupstreams">Streams by Groups</a>
+    <a class="cascade" href="#pubserv">Other Public Services</a>
+    <a class="cascade" href="#groupstreams">Streams by Groups</a>
   </div>
     
   <div class="stream">
@@ -81,7 +81,7 @@ alt="Debate" width="100" height="60""></div>
     <div id="chatbox"></div>
      
     <form name="message" action="">
-	<input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+		<input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
         <input name="usermsg" type="text" id="usermsg" size="63" />
         
     </form>

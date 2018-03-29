@@ -46,6 +46,17 @@ include("templates/page_template.php");
     <a class="cascade" href="#groupstreams">Streams by Groups</a>
 </div>
 
+<div class="stream">
+	<iframe 
+		src="http://player.twitch.tv/?channel=Ninja" 
+		height="432" 
+		width="768" 
+		frameborder="0" 
+		scrolling="no"
+		allowfullscreen="true">
+	</iframe>
+</div>
+
 </body>
 
 </html>

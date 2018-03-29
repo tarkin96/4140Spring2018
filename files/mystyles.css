@@ -82,7 +82,7 @@
 }
 
 .middle .vertical-menu a:hover {
-    background-color: #ccc;
+    
 }
 
 .middle .vertical-menu .block {
@@ -100,8 +100,8 @@
 
 .middle .stream {
     float: left;
-    margin-left: 200px;
-    margin-right: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 input { font:12px arial; }
