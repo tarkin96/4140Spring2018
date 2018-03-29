@@ -9,6 +9,8 @@ session_start();
 	<link rel="stylesheet" 
 	href="font-awesome.min.css">
 
+	<link rel="stylesheet"
+	href="mystyles(wade).css">
 </head>
 
 <body style="background-color:#444">
