@@ -1,9 +1,11 @@
 <?php
 include("templates/page_template.php");
+include("config.php");
 ?>
 
 <html>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="/js/chat.js"></script>
 <head>
 
 </head>
@@ -54,12 +56,22 @@ include("templates/page_template.php");
 			<div style="clear:both"></div>
 		</div>
 
-		<div id="chatbox"></div>
+		<div id="chatbox">
+			<?php
+				$grab_chat_query = "SELECT * FROM `Studio_Day_Chat`";
+				$chat_result = mysqli_query($db,$grab_chat_query);
+					 
+				echo $chat_results;
+			}
+			?>
+		</div>
+		
+		</div>
 
 		<form name="message" action="">
 			<div id="in"> 
 				<input name="usermsg" type="text" class="usermsg" />
-				<input name="submitmsg" type="submit"  class="submitmsg" value="Send" />
+				<input name="submitmsg" type="button"  class="submitmsg" value="Send" />
 			</div>
 		</form>
 	</div>
