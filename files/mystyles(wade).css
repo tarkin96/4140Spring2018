@@ -201,14 +201,14 @@ input.submitmsg {
 }
 
 .bott {
-	
+	margin-top: 2%;
 	
 }
 
 .botmiddle {
 	border: 10px solid #333;
 	width: 50%;
-	height: 50%;
+	height: 10%;
 	background: #999;
 	margin: 0px;
 }
@@ -216,8 +216,9 @@ input.submitmsg {
 .botmiddle .agenda {
 	border: 3px solid #333;
 	width: 100%;
-	height: 30%;
+	height: 100%;
 	background: #999;
+	overflow: scroll;
 }
 
 .botmiddle .agenda desc {
