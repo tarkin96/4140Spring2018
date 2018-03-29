@@ -132,10 +132,10 @@ a.recstream:hover {
   
 #wrapper, #loginform {
     float: right;
-    padding-bottom:25px;
     background:#333;
     color: white;
     width:20%;
+	height:70%;
 }
   
 #loginform { padding-top:18px; }
@@ -144,15 +144,14 @@ a.recstream:hover {
   
 #chatbox {
     text-align:right;
-    padding:10px;
     background:#999;
     height:80%;
     width:100%; 
 }
   
 #usermsg {
-    width:90%;
-	height: 10%;
+    width:85%;
+	height: 5%;
     background: #999;
     float: left;
 }
@@ -161,8 +160,7 @@ a.recstream:hover {
   
 .error { color: #ff0000; }
   
-#menu { 
-	padding:12.5px 25px 12.5px 25px; 
+#menu {  
 	height: 10%;
 	width: 100%;
 }
