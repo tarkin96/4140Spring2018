@@ -5,12 +5,6 @@ include("templates/page_template.php");
 <html>
 
 <head>
-	
-	<title>Twitch Does Town Hall</title>
-  
-	<link rel="stylesheet" 
-	href="font-awesome.min.css">
-
 
 </head>
 <body>

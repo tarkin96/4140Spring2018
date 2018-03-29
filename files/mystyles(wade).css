@@ -206,11 +206,11 @@ input.submitmsg {
 }
 
 .botmiddle {
-	border: 0.5% solid #333;
+	border: 20px solid #333;
 	width: 50%;
 	height: 50%;
 	background: #999;
-	float: top;
+	margin: 0px;
 }
 
 .botmiddle .agenda {
