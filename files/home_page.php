@@ -58,8 +58,7 @@ include("templates/page_template.php");
 
 <div id="wrapper">
 	<div id="menu">
-		<p class="welcome">Welcome, <b></b></p>
-		<p class="logout"><a id="exit" href="#">Exit Chat</a></p>
+		<p class="welcome">Stream Chat</p>
 		<div style="clear:both"></div>
 	</div>
 

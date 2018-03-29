@@ -144,19 +144,17 @@ a.recstream:hover {
   
 #chatbox {
     text-align:right;
-    margin:0 auto;
-    margin-bottom:25px;
     padding:10px;
     background:#999;
-    height:90%;
-    width:100%;
-    overflow:auto; }
+    height:80%;
+    width:100%; 
+}
   
 #usermsg {
-    width:405px;
+    width:90%;
+	height: 10%;
     background: #999;
     float: left;
-    margin-left: 25px;
 }
   
 #submit { width: 60px; float: right}
