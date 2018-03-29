@@ -11,8 +11,6 @@ include("templates/page_template.php");
 	<link rel="stylesheet" 
 	href="font-awesome.min.css">
 
-	<link rel="stylesheet"
-	href="mystyles(wade).css">
 
 </head>
 <body>
