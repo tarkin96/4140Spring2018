@@ -61,7 +61,7 @@ include("config.php");
 				$grab_chat_query = "SELECT * FROM `Studio_Day_Chat`";
 				$chat_result = mysqli_query($db,$grab_chat_query);
 					 
-				echo $chat_results;
+				echo $chat_result;
 			?>
 		</div>
 		
