@@ -45,31 +45,32 @@ include("templates/page_template.php");
 		<a class="cascade" href="#pubserv">Other Public Services</a>
 		<a class="cascade" href="#groupstreams">Streams by Groups</a>
 	</div>
-</div>
 
-<div class="stream">
-	<iframe 
-		src="http://player.twitch.tv/?channel=Ninja"  
-		frameborder="0" 
-		scrolling="no"
-		allowfullscreen="true">
-	</iframe>
-</div>
-
-<div id="wrapper">
-	<div id="menu">
-		<p class="welcome">Stream Chat</p>
-		<div style="clear:both"></div>
+	<div class="stream">
+		<iframe 
+			src="http://player.twitch.tv/?channel=Ninja"  
+			frameborder="0" 
+			scrolling="no"
+			allowfullscreen="true">
+		</iframe>
 	</div>
 
-	<div id="chatbox"></div>
-
-	<form name="message" action="">
-		<div id="in"> 
-			<input name="usermsg" type="text" class="usermsg" />
-			<input name="submitmsg" type="submit"  class="submitmsg" value="Send" />
+	<div id="wrapper">
+		<div id="menu">
+			<p class="welcome">Stream Chat</p>
+			<div style="clear:both"></div>
 		</div>
-	</form>
+
+		<div id="chatbox"></div>
+
+		<form name="message" action="">
+			<div id="in"> 
+				<input name="usermsg" type="text" class="usermsg" />
+				<input name="submitmsg" type="submit"  class="submitmsg" value="Send" />
+			</div>
+		</form>
+	</div>
+
 </div>
 </body>
 
