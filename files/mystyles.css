@@ -151,7 +151,7 @@ a.recstream:hover {
 
 
   
-#usermsg {
+input.usermsg {
     width:85%;
 	height: 5%;
     background: #999;
@@ -159,7 +159,7 @@ a.recstream:hover {
 	display: block;
 }
   
-#submitmsg { 
+input.submitmsg { 
 	width: 10%; 
 	float: left;
 	display: block;
