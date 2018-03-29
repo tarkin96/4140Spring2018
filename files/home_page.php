@@ -12,7 +12,7 @@ include("templates/page_template.php");
 	href="font-awesome.min.css">
 
 	<link rel="stylesheet"
-	href="mystyles(wade).css">
+	href="mystyles.css">
 
 </head>
 <body>
