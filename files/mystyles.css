@@ -1,7 +1,7 @@
 .topnav {
   overflow: hidden;
   background-color: #333;
-  margin-bottom: 1%;
+  margin-bottom: 4%;
 }
 
 .topnav a {
@@ -58,14 +58,13 @@
 .topnav a.logout { float: right; }
 
 .middle {
-  width: 100%;
-  height: 35%;
+  background-color: #333;
 }
 
 .middle .vertical-menu {
+    margin-bottom: 200px;
     float: left;
     width: 20%;
-	height: 100%;
 }
 
 .middle .vertical-menu a.cascade {
@@ -99,17 +98,10 @@
     float: right;
 }
 
-.stream {
+.middle .stream {
     float: left;
     margin-left: 1%;
     margin-right: 1%;
-	width: 40%;
-	max-height: 90%;
-}
-
-.stream iframe {
-	height: 100%;
-	width: 90%;
 }
 
 input { font:12px arial; }
@@ -133,10 +125,10 @@ a.recstream:hover {
   
 #wrapper, #loginform {
     float: right;
+    padding-bottom:25px;
     background:#333;
     color: white;
     width:30%;
-	height:100%;
 }
   
 #loginform { padding-top:18px; }
@@ -145,33 +137,26 @@ a.recstream:hover {
   
 #chatbox {
     text-align:right;
+    margin:0 auto;
+    margin-bottom:25px;
+    padding:10px;
     background:#999;
-    height:80%;
-    width:100%; 
-}
-
-
+    height:270px;
+    width:80%;
+    overflow:auto; }
   
-input.usermsg {
-    width:85%;
-	height: 5%;
-    background: white;
+#usermsg {
+    width:80%;
+    background: #999;
     float: left;
-	display: block;
+    margin-left: 25px;
 }
   
-input.submitmsg { 
-	width: 10%; 
-	float: left;
-	display: block;
-}
+#submit { width: 60px; float: right}
   
 .error { color: #ff0000; }
   
-#menu {  
-	height: 10%;
-	width: 100%;
-}
+#menu { padding:12.5px 25px 12.5px 25px; }
   
 .welcome { float:left; }
   
@@ -179,19 +164,20 @@ input.submitmsg {
   
 .msgln { margin:0 0 2px 0; }
 
-.stream .label {
-   float: center;
+#streamlabel {
+   float: left;
    color: white;
-   height: 10%;
+   margin-left: 10%;
 }
 
 .eventdesc {
 	border: 10px solid #333;
-	width: 50%;
-	height: 15%;
+	width: 78%;
+	height: 75px;
 	background: #999;
+	margin-left: 21%;
+	margin-top: 35%;
 	float: top;
-	overflow: scroll;
 }
 
 .eventdesc desc {
@@ -200,27 +186,22 @@ input.submitmsg {
 	color: #333;
 }
 
-.bott {
-	
-	
-}
-
 .botmiddle {
 	border: 20px solid #333;
-	width: 50%;
-	height: 50%;
+	width: 45%;
+	height: 250px;
 	background: #999;
-	margin: 0px;
+	margin-left: 21%;
+	float: top;
 }
 
 .botmiddle .agenda {
 	border: 3px solid #333;
-	width: 100%;
-	height: 30%;
+	width: 99.5%;
+	height: 75px;
 	background: #999;
 }
 
 .botmiddle .agenda desc {
 	color: #333;
-	display: block;
 }

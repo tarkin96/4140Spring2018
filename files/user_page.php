@@ -13,7 +13,7 @@
 href="font-awesome.min.css">
 
 <link rel="stylesheet"
-href="mystyles(wade).css">
+href="mystyles.css">
 
 <style>
 
@@ -38,7 +38,7 @@ href="mystyles(wade).css">
 
 <div class="middle">
   <div class="vertical-menu">
-    <a href="#recserv" class="listed">Recommended Services</a>
+    <a href="#recserv" class="cascade">Recommended Services</a>
     <div class="block">
 	<service href="#senate">Senate Hearing</service>
 	<div class="photo">
@@ -63,8 +63,8 @@ alt="Debate" width="100" height="60""></div>
   <div class="stream">
     <iframe 
         src="http://player.twitch.tv/?channel=Ninja" 
-        height="432" 
-        width="768" 
+        height="396" 
+        width="704" 
         frameborder="0" 
         scrolling="no"
         allowfullscreen="true">
@@ -81,7 +81,7 @@ alt="Debate" width="100" height="60""></div>
     <div id="chatbox"></div>
      
     <form name="message" action="">
-		<input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+	<input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
         <input name="usermsg" type="text" id="usermsg" size="63" />
         
     </form>
@@ -115,5 +115,6 @@ alt="Debate" width="100" height="60""></div>
 </div>
 
 </body>
+
 
 </html>
