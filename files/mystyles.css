@@ -186,11 +186,9 @@ input.submitmsg {
 
 .eventdesc {
 	border: 10px solid #333;
-	width: 1430px;
-	height: 75px;
+	width: 50%;
+	height: 10%;
 	background: #999;
-	margin-left: 445px;
-	margin-top: 575px;
 	float: top;
 }
 
