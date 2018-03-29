@@ -53,6 +53,7 @@ include("templates/page_template.php");
 			scrolling="no"
 			allowfullscreen="true">
 		</iframe>
+		<div class="label"><h3>Senate Judiciary Committee on FaceBook Privacy </h3></div>
 	</div>
 
 	<div id="wrapper">
@@ -72,6 +73,32 @@ include("templates/page_template.php");
 	</div>
 
 </div>
+
+<div class="bott">
+
+	<div class="eventdesc">
+		<desc>The Senate interrogates Mark Zuckerberg in regards to recent data breaches
+		and the nature of user privacy on Facebook.</desc>
+		<desc>This follows the recent news that Facebook released data on millions of its users 
+		to firms that target swing voters in political campaigns. </desc>
+		<desc>CEO Mark Zuckerberg defends his innocence, pointing out that users signed away their data
+		rights during signup.</desc>
+	</div>
+
+	<div class="botmiddle">
+		<div class="agenda">
+		<desc><b>Agenda</b><br><br></desc>
+		<desc>Right now: Review of timeline of events<br></desc>
+		<desc>Next:      Mark Zuckerberg interrogation</desc>
+		</div>
+
+	</div>
+
+	<div class="poll">
+	  <form method="post" action="https://poll.pollcode.com/17834677"><div style="background-color:#999;padding:2px;width:175px;font-family:Arial;font-size:small;color:#000;"><div style="padding:2px 0px 4px 2px;"><strong>Do you like pie?</strong></div><input type="radio" name="answer" value="1" id="answer178346771" style="float:left;" /><label for="answer178346771" style="float:left;width:150px;">Yes</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer178346772" style="float:left;" /><label for="answer178346772" style="float:left;width:150px;">No</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form>
+	</div>
+</div>
+
 </body>
 
 </html>
