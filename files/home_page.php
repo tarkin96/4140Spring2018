@@ -85,11 +85,10 @@ include("templates/page_template.php");
 
 	<div class="botmiddle">
 		<div class="agenda">
-		<desc><b>Agenda</b><br><br></desc>
-		<desc>Right now: Review of timeline of events<br></desc>
-		<desc>Next:      Mark Zuckerberg interrogation</desc>
+			<desc>Agenda</desc>
+			<desc>Right now: Review of timeline of events</desc>
+			<desc>Next: Mark Zuckerberg interrogation</desc>
 		</div>
-
 	</div>
 
 	<div class="poll">
