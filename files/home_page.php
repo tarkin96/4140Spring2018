@@ -4,6 +4,10 @@ include("templates/page_template.php");
 
 <html>
 
+<head>
+	
+
+</head>
 <body>
 <div class="middle">
 	<div class="vertical-menu">
