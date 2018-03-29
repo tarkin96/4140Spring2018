@@ -154,13 +154,13 @@ a.recstream:hover {
 	height: 5%;
     background: #999;
     float: left;
-	display: block;
+	display: inline-block;
 }
   
 #submit { 
 	width: 60px; 
 	float: right;
-	display: block;
+	display: inline-block;
 }
   
 .error { color: #ff0000; }
