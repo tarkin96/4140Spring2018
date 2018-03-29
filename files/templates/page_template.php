@@ -7,10 +7,10 @@ session_start();
 	<title>Twitch Does Town Hall</title>
   
 	<link rel="stylesheet" 
-	href="../font-awesome.min.css">
+	href="font-awesome.min.css">
 
 	<link rel="stylesheet"
-	href="../mystyles(wade).css">
+	href="mystyles(wade).css">
 </head>
 
 <body style="background-color:#444">
