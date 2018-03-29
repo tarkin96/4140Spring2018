@@ -78,10 +78,8 @@ include("templates/page_template.php");
 
 	<div class="eventdesc">
 		<desc>The Senate interrogates Mark Zuckerberg in regards to recent data breaches
-		and the nature of user privacy on Facebook.</desc>
-		<desc>This follows the recent news that Facebook released data on millions of its users 
-		to firms that target swing voters in political campaigns. </desc>
-		<desc>CEO Mark Zuckerberg defends his innocence, pointing out that users signed away their data
+		and the nature of user privacy on Facebook. This follows the recent news that Facebook released data on millions of its users 
+		to firms that target swing voters in political campaigns. CEO Mark Zuckerberg defends his innocence, pointing out that users signed away their data
 		rights during signup.</desc>
 	</div>
 

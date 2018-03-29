@@ -1,7 +1,7 @@
 <?php
 session_start();
 ?>
-<html style="width:100%; height:100%; overflow: scroll">
+<html style="width:100%; height:200%; overflow: scroll">
 
 <head>
 	<title>Twitch Does Town Hall</title>
