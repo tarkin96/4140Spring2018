@@ -65,9 +65,10 @@ include("templates/page_template.php");
 	<div id="chatbox"></div>
 
 	<form name="message" action="">
-		<input name="usermsg" type="text" id="usermsg" size="63" />
-		<input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
-		
+		<div id="in"> 
+			<input name="usermsg" type="text" id="usermsg" size="63" />
+			<input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+		</div>
 	</form>
 </div>
 </body>

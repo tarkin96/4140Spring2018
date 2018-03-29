@@ -148,19 +148,21 @@ a.recstream:hover {
     height:80%;
     width:100%; 
 }
+
+
   
 #usermsg {
     width:85%;
 	height: 5%;
     background: #999;
     float: left;
-	display: inline-block;
+	display: block;
 }
   
 #submit { 
 	width: 60px; 
-	float: right;
-	display: inline-block;
+	float: left;
+	display: block;
 }
   
 .error { color: #ff0000; }
