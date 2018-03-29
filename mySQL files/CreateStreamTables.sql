@@ -15,3 +15,4 @@ INSERT INTO `Plaue_4140_S2018_Mods` VALUES ('ModUser');
 DESCRIBE `Plaue_4140_S2018_Mods`;
 
 create table if not exists `Studio_Day_Chat` (`User_Name` VARCHAR(50), `Message` VARCHAR(200), primary key(`User_Name`));
+SELECT * FROM `Studio_Day_Chat`;

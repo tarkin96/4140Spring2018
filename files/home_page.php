@@ -58,19 +58,21 @@ include("config.php");
 
 		<div id="chatbox">
 			<?php
+			if($_SERVER["REQUEST_METHOD"] == "POST") {
 				$grab_chat_query = "SELECT * FROM `Studio_Day_Chat`";
 				$chat_result = mysqli_query($db,$grab_chat_query);
 					 
 				echo $chat_result;
+			}
 			?>
 		</div>
 		
 		</div>
 
-		<form name="message" action="">
+		<form name="message">
 			<div id="in"> 
 				<input name="usermsg" type="text" class="usermsg" />
-				<input name="submitmsg" type="button"  class="submitmsg" value="Send" />
+				<input name="submitmsg" type="submit"  class="submitmsg" value="Send" />
 			</div>
 		</form>
 	</div>
