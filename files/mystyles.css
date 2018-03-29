@@ -109,7 +109,7 @@
 
 .stream iframe {
 	height: 100%;
-	width: 100%;
+	width: 90%;
 }
 
 input { font:12px arial; }
@@ -182,6 +182,7 @@ input.submitmsg {
 .stream .label {
    float: center;
    color: white;
+   height: 10%;
 }
 
 .eventdesc {
