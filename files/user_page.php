@@ -1,4 +1,5 @@
 <?php
+//this sucks!!!!!
 	session_start();
 	if (!array_key_exists('login_user', $_SESSION)) : 
 		header("Location: http://webapp.cs.clemson.edu/~jwk/login.php");
