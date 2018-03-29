@@ -188,15 +188,15 @@ input.submitmsg {
 .eventdesc {
 	border: 10px solid #333;
 	width: 50%;
-	height: 5%;
+	height: 10%;
 	background: #999;
 	float: top;
 	overflow: scroll;
 }
 
 .eventdesc desc {
-	margin-left: 15px;
-	margin-top:  60px;
+	margin-left: 1%;
+	margin-top:  1%;
 	color: #333;
 }
 
@@ -206,7 +206,7 @@ input.submitmsg {
 }
 
 .botmiddle {
-	border: 20px solid #333;
+	border: 10px solid #333;
 	width: 50%;
 	height: 50%;
 	background: #999;
