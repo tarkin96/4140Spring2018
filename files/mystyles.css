@@ -61,13 +61,13 @@
   background-color: #333;
 }
 
-.middle .vertical-menu {
+#middle .vertical-menu {
     margin-bottom: 200px;
     float: left;
     width: 20%;
 }
 
-.middle .vertical-menu a.cascade {
+#middle .vertical-menu a.cascade {
     background-color: #333;
     color: white;
     display: block;
@@ -75,17 +75,17 @@
     text-decoration: none;
 }
 
-.middle .vertical-menu a.stream {
+#middle .vertical-menu a.stream {
     background-color: #999;
     color: black;
 	vertical-align: middle;
 }
 
-.middle .vertical-menu a:hover {
+#middle .vertical-menu a:hover {
     
 }
 
-.middle .vertical-menu .block {
+#middle .vertical-menu .block {
     border: 1px solid #333;
     background-color: #999;
     color: black;
@@ -94,7 +94,7 @@
     text-decoration: none;
 }
 
-.middle .vertical-menu service {
+#middle .vertical-menu service {
     float: right;
 }
 

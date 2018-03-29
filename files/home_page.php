@@ -16,7 +16,7 @@ include("templates/page_template.php");
 
 </head>
 
-<div class="middle">
+<div id="middle">
 	<div class="vertical-menu">
 		<a href="#recserv" class="cascade">Recommended Services</a>
 		<div class="block">
