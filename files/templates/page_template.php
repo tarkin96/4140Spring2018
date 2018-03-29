@@ -1,7 +1,7 @@
 <?php
 session_start();
 ?>
-<html>
+<html style="width:100%; height:100%">
 
 <head>
 	<title>Twitch Does Town Hall</title>
