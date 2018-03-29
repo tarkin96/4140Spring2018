@@ -103,13 +103,13 @@
     float: left;
     margin-left: 1%;
     margin-right: 1%;
-	width: 50%;
+	width: 40%;
 	max-height: 90%;
 }
 
 .stream iframe {
 	height: 100%;
-	width: 90%;
+	width: 100%;
 }
 
 input { font:12px arial; }
