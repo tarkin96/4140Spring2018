@@ -48,13 +48,26 @@ include("templates/page_template.php");
 
 <div class="stream">
 	<iframe 
-		src="http://player.twitch.tv/?channel=Ninja" 
-		height="432" 
-		width="768" 
+		src="http://player.twitch.tv/?channel=Ninja"  
 		frameborder="0" 
 		scrolling="no"
 		allowfullscreen="true">
 	</iframe>
+</div>
+
+<div id="wrapper">
+	<div id="menu">
+		<p class="welcome">Welcome, <b></b></p>
+		<p class="logout"><a id="exit" href="#">Exit Chat</a></p>
+		<div style="clear:both"></div>
+	</div>
+
+	<div id="chatbox"></div>
+
+	<form name="message" action="">
+		<input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+		<input name="usermsg" type="text" id="usermsg" size="63" />
+	</form>
 </div>
 
 </body>

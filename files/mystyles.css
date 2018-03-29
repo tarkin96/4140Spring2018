@@ -1,7 +1,7 @@
 .topnav {
   overflow: hidden;
   background-color: #333;
-  margin-bottom: 4%;
+  margin-bottom: 1%;
 }
 
 .topnav a {
@@ -100,8 +100,13 @@
 
 .middle .stream {
     float: left;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.middle .stream iframe {
+	height: 30%;
+	width: 30%;
 }
 
 input { font:12px arial; }
