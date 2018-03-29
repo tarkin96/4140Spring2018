@@ -102,11 +102,12 @@
     float: left;
     margin-left: 5%;
     margin-right: 5%;
+	height: 30%;
+	width: 30%;
 }
 
 .middle .stream iframe {
-	height: 30%;
-	width: 30%;
+
 }
 
 input { font:12px arial; }
