@@ -53,7 +53,7 @@ include("templates/page_template.php");
 			scrolling="no"
 			allowfullscreen="true">
 		</iframe>
-		<div class="label"><h3>Senate Judiciary Committee on FaceBook Privacy </h3></div>
+		<div class="label">Senate Judiciary Committee on FaceBook Privacy</div>
 	</div>
 
 	<div id="wrapper">
