@@ -222,4 +222,5 @@ input.submitmsg {
 
 .botmiddle .agenda desc {
 	color: #333;
+	display: block;
 }
