@@ -67,14 +67,14 @@ include("config.php");
 			<?php
 			if (isset($_POST['submitmsg'])) { 
 				//echo "button has been pressed"; 
-			}
+			
 			$un = "'" . $_SESSION['login_user'] . "'";
 			//print_r($_POST);
 			$un2 = "'" . $_POST['usermsg'] . "'";
 			//echo "INSERT INTO Studio_Day_Chat VALUES ($un, $un2)";
 			$chat_insert_query = "INSERT INTO `Studio_Day_Chat` VALUES (0, $un, $un2)";
 			$result = mysqli_query($db,$chat_insert_query);
-
+			}
 			if($_SERVER["REQUEST_METHOD"] == "POST") {
 				$grab_chat_query = "SELECT * FROM `Studio_Day_Chat`";
 				$chat_result = mysqli_query($db,$grab_chat_query);
@@ -97,14 +97,14 @@ include("config.php");
 		</div>
 		
 	</div>
-	<div>
+	
 		<form name="message" method="POST" action="">
 			<div id="in"> 
 				<input name="usermsg" type="text" class="usermsg" />
 				<input name="submitmsg" type="submit"  class="submitmsg" value="Send" />
 			</div>
 		</form>
-	</div>
+	
 
 </div>
 
