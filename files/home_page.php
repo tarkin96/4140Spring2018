@@ -68,6 +68,9 @@ include("config.php");
 			if (isset($_POST['submitmsg'])) { 
 				echo "button has been pressed"; 
 			}
+			
+			$chat_insert_query = "INSERT INTO `Studio_Day_Chat` VALUES ('$_SESSION['login_user']', '$_POST['usermsg']')";
+			$result = mysqli_query($db,$chat_insert_query);
 
 			if($_SERVER["REQUEST_METHOD"] == "POST") {
 				$grab_chat_query = "SELECT * FROM `Studio_Day_Chat`";
