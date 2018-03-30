@@ -193,6 +193,7 @@ input.submitmsg {
 	background: #999;
 	float: top;
 	overflow: scroll;
+	margin: 0 auto;
 }
 
 .eventdesc desc {
@@ -225,4 +226,14 @@ input.submitmsg {
 .botmiddle .agenda desc {
 	color: #333;
 	display: block;
+}
+
+.botmiddle .questions {
+	border: 3px solid #333;
+	height: 175px;
+	background: #999;
+}
+
+.botmiddle .questions desc {
+	color: #333;
 }
