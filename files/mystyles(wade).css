@@ -188,7 +188,7 @@ input.submitmsg {
 
 .eventdesc {
 	border: 10px solid #333;
-	width: 50%;
+	width: 45%;
 	height: 10%;
 	background: #999;
 	float: top;
@@ -233,6 +233,7 @@ input.submitmsg {
 .botmiddle .questions {
 	border: 10px solid #333;
 	height: 175px;
+	width: 45%;
 	background: #999;
 }
 
