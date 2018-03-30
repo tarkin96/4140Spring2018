@@ -14,6 +14,8 @@ create table if not exists `Plaue_4140_S2018_Mods` (`Mod_User_Name` VARCHAR(50),
 INSERT INTO `Plaue_4140_S2018_Mods` VALUES ('ModUser');
 DESCRIBE `Plaue_4140_S2018_Mods`;
 
-create table if not exists `Studio_Day_Chat` (`User_Name` VARCHAR(50), `Message` VARCHAR(200), primary key(`User_Name`));
+create table if not exists `Studio_Day_Chat` (`Index` int(11), `User_Name` VARCHAR(50), `Message` VARCHAR(200));
+describe `Studio_Day_Chat`;
 SELECT * FROM `Studio_Day_Chat`;
 INSERT INTO `Studio_Day_Chat` VALUES ('wade', 'hello!');
+INSERT INTO `Studio_Day_Chat` VALUES ('wade', 'Government suicks!');
