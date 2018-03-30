@@ -74,9 +74,10 @@ include("config.php");
 				//echo "INSERT INTO Studio_Day_Chat VALUES ($un, $un2)";
 				$chat_insert_query = "INSERT INTO `Studio_Day_Chat` VALUES (0, $un, $un2)";
 				$result = mysqli_query($db,$chat_insert_query);
-				unset($_POST['usermsg']);
-				unset($_POST['submitmsg']);
-			
+
+			}
+			unset($_POST['usermsg']);
+			unset($_POST['submitmsg']);
 			//if($_SERVER["REQUEST_METHOD"] == "POST") {
 				$grab_chat_query = "SELECT * FROM `Studio_Day_Chat`";
 				$chat_result = mysqli_query($db,$grab_chat_query);
@@ -94,7 +95,7 @@ include("config.php");
 					echo $chat_rows['Message'];
 					echo "<br>";
 				}
-			}//end of if
+			//}//end of if
 			?>
 		</div>
 		
