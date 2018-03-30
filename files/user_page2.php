@@ -46,7 +46,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 
 	<div class="stream">
 		<iframe 
-			src="https://www.twitch.tv/?channel=quin69"  
+			src="https://player.twitch.tv/?channel=quin69"  
 			frameborder="0" 
 			scrolling="no"
 			allowfullscreen="true">
