@@ -51,7 +51,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 			scrolling="no"
 			allowfullscreen="true">
 		</iframe>
-		<div class="label">Senate Judiciary Committee on FaceBook Privacy</div>
+		<div class="label">Local Defense Spending and how to Stop Yemen</div>
 	</div>
 
 	<div id="wrapper">
@@ -113,23 +113,20 @@ if (!array_key_exists('login_user', $_SESSION)) {
 <div class="bott">
 
 	<div class="eventdesc">
-		<desc>The Senate interrogates Mark Zuckerberg in regards to recent data breaches
-		and the nature of user privacy on Facebook. This follows the recent news that Facebook released data on millions of its users 
-		to firms that target swing voters in political campaigns. CEO Mark Zuckerberg defends his innocence, pointing out that users signed away their data
-		rights during signup.</desc>
+		<desc>Governor Ripub Lycan discusses the conflict in Yemen and how it might end with Somalia invading Russia.</desc>
 	</div>
 
 	<div class="botmiddle">
 		<div class="agenda">
 			<desc>Agenda</desc>
-			<desc>Right now: Review of timeline of events</desc>
-			<desc>Next: Mark Zuckerberg interrogation</desc>
+			<desc>Right now: How bitcoin can help Yemenis.</desc>
+			<desc>Next: Nothing; all you need is bitcoin.</desc>
 		</div>
 
 		<div class="questions">
 			<desc><b>Top Viewer Concerns</b><br><br></desc>
-			<desc>What charges are being considered against Zuckerberg?<br><br><br></desc>
-			<desc>We need to address online privacy concerns.  What is congress going to do about it?</desc>
+			<desc>How to google?<br><br><br></desc>
+			<desc>How can we best cooperate with our allies from Iran?</desc>
 		</div>
 	</div>
 	

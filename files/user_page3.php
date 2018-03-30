@@ -51,7 +51,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 			scrolling="no"
 			allowfullscreen="true">
 		</iframe>
-		<div class="label">Senate Judiciary Committee on FaceBook Privacy</div>
+		<div class="label">HCI-18 Debate on Healthcare</div>
 	</div>
 
 	<div id="wrapper">
@@ -114,23 +114,21 @@ if (!array_key_exists('login_user', $_SESSION)) {
 <div class="bott">
 
 	<div class="eventdesc">
-		<desc>The Senate interrogates Mark Zuckerberg in regards to recent data breaches
-		and the nature of user privacy on Facebook. This follows the recent news that Facebook released data on millions of its users 
-		to firms that target swing voters in political campaigns. CEO Mark Zuckerberg defends his innocence, pointing out that users signed away their data
-		rights during signup.</desc>
+		<desc>Sandy Hetfield and Eddie Dickinson debate the best implementations of healthcare services at the state level. Sandy states that it is "sad,
+		but true" that our healthcare services are not up to date. Eddie claims that over-spending on public healthcare will lead to "wasted money, and
+		wasted years of attempting to improve consumer choice in healthcare.</desc>
 	</div>
 
 	<div class="botmiddle">
 		<div class="agenda">
 			<desc>Agenda</desc>
-			<desc>Right now: Review of timeline of events</desc>
-			<desc>Next: Mark Zuckerberg interrogation</desc>
+			<desc>Right now: Sandy gets 5-minute opening statement.</desc>
+			<desc>Next: This debate ends.</desc>
 		</div>
 
 		<div class="questions">
 			<desc><b>Top Viewer Concerns</b><br><br></desc>
-			<desc>What charges are being considered against Zuckerberg?<br><br><br></desc>
-			<desc>We need to address online privacy concerns.  What is congress going to do about it?</desc>
+			<desc>Eddie, I spend $666 a day on health insurance. It makes me want to run to the hills! How do you expect to fix it?<br><br><br></desc>
 		</div>
 	</div>
 	
