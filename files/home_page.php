@@ -4,8 +4,19 @@ include("config.php");
 ?>
 
 <html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="/js/chat.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script type="text/javascript">
+// jQuery Document
+	$(document).ready(function(){
+	});
+	//If user submits the form
+	$("#submitmsg").click(function(){	
+		var clientmsg = $("#usermsg").val();
+		$.post("chat.php", {text: clientmsg});				
+		$("#usermsg").attr("value", "");
+		return false;
+	});
+</script>
 <head>
 
 </head>
