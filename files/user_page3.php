@@ -84,14 +84,17 @@ if (!array_key_exists('login_user', $_SESSION)) {
 						//echo $row;
 					//}
 				//}
-				while($chat_rows = mysqli_fetch_array($chat_result,MYSQLI_ASSOC))	
-				{
-					echo "<strong>";
-					echo $chat_rows['User_Name'] . " : ";
-					echo "</strong>";
-					echo $chat_rows['Message'];
-					echo "<br>";
+				if ($chat_result) {
+					while($chat_rows = mysqli_fetch_array($chat_result,MYSQLI_ASSOC))	
+					{
+						echo "<strong>";
+						echo $chat_rows['User_Name'] . " : ";
+						echo "</strong>";
+						echo $chat_rows['Message'];
+						echo "<br>";
+					}
 				}
+
 			//}//end of if
 			?>
 		</div>
