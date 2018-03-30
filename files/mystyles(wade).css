@@ -153,17 +153,15 @@ a.recstream:hover {
 
   
 input.usermsg {
-    width:85%;
+    width:80%;
 	height: 5%;
-    background: white;
+    background: #999;
     float: left;
 	display: block;
 }
   
 input.submitmsg { 
-	width: 10%; 
-	float: left;
-	display: block;
+	
 }
   
 .error { color: #ff0000; }
