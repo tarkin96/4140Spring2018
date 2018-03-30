@@ -221,6 +221,7 @@ input.submitmsg {
 	height: 100%;
 	background: #999;
 	overflow: scroll;
+	margin: 0 auto;
 }
 
 .botmiddle .agenda desc {
