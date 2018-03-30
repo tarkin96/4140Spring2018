@@ -56,7 +56,7 @@ include("config.php");
 			<div style="clear:both"></div>
 		</div>
 
-		<div id="chatbox">
+		<div id="chatbox" action="">
 			<?php
 			if($_SERVER["REQUEST_METHOD"] == "POST") {
 				$grab_chat_query = "SELECT * FROM `Studio_Day_Chat`";
