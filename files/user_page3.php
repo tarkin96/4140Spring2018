@@ -46,7 +46,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 
 	<div class="stream">
 		<iframe 
-			src="https://www.twitch.tv/dota2ruhub"  
+			src="https://www.twitch.tv/?channel=dota2ruhub"  
 			frameborder="0" 
 			scrolling="no"
 			allowfullscreen="true">
