@@ -232,8 +232,8 @@ input.submitmsg {
 
 .botmiddle .questions {
 	border: 10px solid #333;
-	height: 175px;
-	width: 45%;
+	height: 100%;
+	width: 100%;
 	background: #999;
 }
 
