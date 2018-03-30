@@ -1,8 +1,8 @@
 <?php
 include("templates/page_template.php");
 include("config.php");
-if (array_key_exists('login_user', $_SESSION)) {
-	header("Location: home_page.php");
+if (!array_key_exists('login_user', $_SESSION)) {
+	header("Location: login.php");
 }
 ?>
 
