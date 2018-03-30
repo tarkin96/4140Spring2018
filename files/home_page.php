@@ -83,6 +83,7 @@ include("config.php");
 					foreach($chat_rows as $row) {
 						echo $row;
 					}
+				}
 				while($chat_rows = mysqli_fetch_array($chat_result,MYSQLI_ASSOC))	
 				{
 					echo "<strong>";
@@ -91,14 +92,12 @@ include("config.php");
 					echo $chat_rows['Message'];
 					echo "<br>";
 				}
-				
-
 			}//end of if
 			?>
 		</div>
 		
-		</div>
-
+	</div>
+	<div>
 		<form name="message" method="POST" action="">
 			<div id="in"> 
 				<input name="usermsg" type="text" class="usermsg" />
