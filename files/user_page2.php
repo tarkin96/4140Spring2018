@@ -46,7 +46,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 
 	<div class="stream">
 		<iframe 
-			src="http://player.twitch.tv/?channel=Ninja"  
+			src="https://www.twitch.tv/quin69"  
 			frameborder="0" 
 			scrolling="no"
 			allowfullscreen="true">
@@ -69,7 +69,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 				//print_r($_POST);
 				$un2 = "'" . $_POST['usermsg'] . "'";
 				//echo "INSERT INTO Studio_Day_Chat VALUES ($un, $un2)";
-				$chat_insert_query = "INSERT INTO `Studio_Day_Chat` VALUES (0, $un, $un2)";
+				$chat_insert_query = "INSERT INTO `Studio_Day_Chat2` VALUES (0, $un, $un2)";
 				$result = mysqli_query($db,$chat_insert_query);
 
 			}
