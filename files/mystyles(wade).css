@@ -150,7 +150,7 @@ a.recstream:hover {
     background:#999;
     height:80%;
     width:100%;
-	overflow: scroll;
+	overflow: auto;
 }
 
 
@@ -164,7 +164,7 @@ input.usermsg {
 }
   
 input.submitmsg { 
-	
+	height: 5%;
 }
   
 .error { color: #ff0000; }
