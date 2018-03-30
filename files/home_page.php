@@ -1,21 +1,17 @@
 <?php
 include("templates/page_template.php");
 include("config.php");
+
+function add_to_chat() {
+	include("config.php");
+	$chat_insert_query = "INSERT INTO `Studio_Day_Chat` VALUES ('$_SESSION['login_user']', $text);
+	$result = mysqli_query($db,$chat_insert_query);
+}
 ?>
 
 <html>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 <script type="text/javascript">
-// jQuery Document
-	$(document).ready(function(){
-	});
-	//If user submits the form
-	$("#submitmsg").click(function(){	
-		var clientmsg = $("#usermsg").val();
-		$.post("chat.php", {text: clientmsg});				
-		$("#usermsg").attr("value", "");
-		return false;
-	});
 </script>
 <head>
 
@@ -69,6 +65,10 @@ include("config.php");
 
 		<div id="chatbox" action="">
 			<?php
+			if (isset($_POST['submitmsg'])) { 
+				echo "button has been pressed"; 
+			}
+
 			if($_SERVER["REQUEST_METHOD"] == "POST") {
 				$grab_chat_query = "SELECT * FROM `Studio_Day_Chat`";
 				$chat_result = mysqli_query($db,$grab_chat_query);
@@ -80,7 +80,7 @@ include("config.php");
 		
 		</div>
 
-		<form name="message">
+		<form name="message" method="POST" action="">
 			<div id="in"> 
 				<input name="usermsg" type="text" class="usermsg" />
 				<input name="submitmsg" type="submit"  class="submitmsg" value="Send" />
