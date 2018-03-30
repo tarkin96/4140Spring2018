@@ -192,7 +192,6 @@ input.submitmsg {
 	height: 10%;
 	background: #999;
 	float: top;
-	overflow: scroll;
 	margin-left: 21%;
 }
 
@@ -221,7 +220,6 @@ input.submitmsg {
 	width: 100%;
 	height: 100%;
 	background: #999;
-	overflow: scroll;
 	margin: 0 auto;
 }
 
@@ -231,7 +229,7 @@ input.submitmsg {
 }
 
 .botmiddle .questions {
-	border: 10px solid #333;
+	border: 3px solid #333;
 	height: 100%;
 	width: 100%;
 	background: #999;
