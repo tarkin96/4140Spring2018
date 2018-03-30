@@ -193,7 +193,7 @@ input.submitmsg {
 	background: #999;
 	float: top;
 	overflow: scroll;
-	margin: 21%;
+	margin-left: 21%;
 }
 
 .eventdesc desc {
