@@ -96,7 +96,7 @@ include("config.php");
 			?>
 		</div>
 		
-	</div>
+	
 	
 		<form name="message" method="POST" action="">
 			<div id="in"> 
@@ -104,7 +104,7 @@ include("config.php");
 				<input name="submitmsg" type="submit"  class="submitmsg" value="Send" />
 			</div>
 		</form>
-	
+	</div>
 
 </div>
 
