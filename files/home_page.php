@@ -72,8 +72,8 @@ include("config.php");
 			if($_SERVER["REQUEST_METHOD"] == "POST") {
 				$grab_chat_query = "SELECT * FROM `Studio_Day_Chat`";
 				$chat_result = mysqli_query($db,$grab_chat_query);
-				$chat_rows = mysqli_fetch_array($result,MYSQLI_ASSOC);	 
-				foreach($rows as $row) {
+				$chat_rows = mysqli_fetch_array($chat_result,MYSQLI_ASSOC);	 
+				foreach($chat_rows as $row) {
 					echo $row;
 				}
 			}
