@@ -70,7 +70,7 @@ include("config.php");
 			}
 			$un = "'" . $_SESSION['login_user'] . "'";
 			//print_r($_POST);
-			$un2 = "'" . $_POST['usermsg'] "'";
+			$un2 = "'" . $_POST['usermsg'] . "'";
 			//echo "INSERT INTO Studio_Day_Chat VALUES ($un, $un2)";
 			$chat_insert_query = "INSERT INTO `Studio_Day_Chat` VALUES (0, $un, $un2)";
 			$result = mysqli_query($db,$chat_insert_query);
