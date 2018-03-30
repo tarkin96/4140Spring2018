@@ -2,11 +2,11 @@
 include("templates/page_template.php");
 include("config.php");
 
-function add_to_chat() {
-	include("config.php");
-	$chat_insert_query = "INSERT INTO `Studio_Day_Chat` VALUES ('$_SESSION['login_user']', $text);
-	$result = mysqli_query($db,$chat_insert_query);
-}
+//function add_to_chat() {
+	//include("config.php");
+	//$chat_insert_query = "INSERT INTO `Studio_Day_Chat` VALUES ('$_SESSION['login_user']', $text);
+	//$result = mysqli_query($db,$chat_insert_query);
+//}
 ?>
 
 <html>
