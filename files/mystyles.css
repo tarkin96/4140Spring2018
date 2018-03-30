@@ -197,11 +197,20 @@ a.recstream:hover {
 
 .botmiddle .agenda {
 	border: 3px solid #333;
-	width: 99.5%;
 	height: 75px;
 	background: #999;
 }
 
 .botmiddle .agenda desc {
+	color: #333;
+}
+
+.botmiddle .questions {
+	border: 3px solid #333;
+	height: 175px;
+	background: #999;
+}
+
+.botmiddle .questions desc {
 	color: #333;
 }
