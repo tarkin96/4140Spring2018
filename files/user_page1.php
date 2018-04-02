@@ -150,7 +150,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 			Submit Your Own Question
 		</div>
 		<div class="questsubmit">
-			<textarea name="questtext" type="text" class="questtext"/>
+			<textarea name="questtext" type="text" class="questtext"></textarea>
 			<input name="submitquest" type="submit"  class="submitquest" value="Send"/>
 		</div>
 	</div>
