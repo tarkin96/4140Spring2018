@@ -234,7 +234,7 @@ input.submitmsg {
 
 .botmiddle .agenda {
 	border: 10px solid #333;
-	width: 20%;
+	width: 100%;
 	height: 100%;
 	background: #999;
 	margin-left: 1%;
@@ -250,7 +250,7 @@ input.submitmsg {
 
 .botmiddle .questsubmit {
 	border: 10px solid #333;
-	width: 40%;
+	width: 100%;
 	height: 100%;
 	background: #999;
 	margin-left: 3%;

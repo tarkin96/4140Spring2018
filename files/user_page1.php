@@ -135,8 +135,8 @@ if (!array_key_exists('login_user', $_SESSION)) {
 </div>
 
 <span class="botmiddle">
-	<div class="box">
-		<div class="label" style="margin-left: 1%; margin-bottom 5%;">
+	<div class="box" style="40%">
+		<div class="label" style="">
 			Agenda
 		</div>
 		<div class="agenda">
@@ -145,8 +145,8 @@ if (!array_key_exists('login_user', $_SESSION)) {
 		</div>
 	</div>
 
-	<div class ="box">
-		<div class="label" style="margin-left: 3%; margin-bottom 5%;">
+	<div class ="box" style="width: 40%">
+		<div class="label" style="">
 			Submit Your Own Question
 		</div>
 		<div class="questsubmit">
