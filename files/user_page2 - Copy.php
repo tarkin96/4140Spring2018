@@ -46,12 +46,12 @@ if (!array_key_exists('login_user', $_SESSION)) {
 
 	<div class="stream">
 		<iframe 
-			src="https://player.twitch.tv/?channel=dota2ruhub"  
+			src="https://player.twitch.tv/?channel=quin69"  
 			frameborder="0" 
 			scrolling="no"
 			allowfullscreen="true">
 		</iframe>
-		<div class="label">HCI-18 Debate on Healthcare</div>
+		<div class="label">Local Defense Spending and how to Stop Yemen</div>
 	</div>
 
 	<div id="wrapper">
@@ -69,14 +69,14 @@ if (!array_key_exists('login_user', $_SESSION)) {
 				//print_r($_POST);
 				$un2 = "'" . $_POST['usermsg'] . "'";
 				//echo "INSERT INTO Studio_Day_Chat VALUES ($un, $un2)";
-				$chat_insert_query = "INSERT INTO `Studio_Day_Chat3` VALUES ($un, $un2)";
+				$chat_insert_query = "INSERT INTO `Studio_Day_Chat2` VALUES ($un, $un2)";
 				$result = mysqli_query($db,$chat_insert_query);
 
 			}
 			unset($_POST['usermsg']);
 			unset($_POST['submitmsg']);
 			//if($_SERVER["REQUEST_METHOD"] == "POST") {
-				$grab_chat_query = "SELECT * FROM `Studio_Day_Chat3`";
+				$grab_chat_query = "SELECT * FROM `Studio_Day_Chat2`";
 				$chat_result = mysqli_query($db,$grab_chat_query);
 				//$chat_rows = mysqli_fetch_array($chat_result,MYSQLI_ASSOC);	
 				//if ($chat_rows) {
@@ -94,7 +94,6 @@ if (!array_key_exists('login_user', $_SESSION)) {
 						echo "<br>";
 					}
 				}
-
 			//}//end of if
 			?>
 		</div>
@@ -113,49 +112,30 @@ if (!array_key_exists('login_user', $_SESSION)) {
 
 <div class="bott">
 
-	<div style="display: inline-block;">
-		<div class="eventdesc">
-			<desc>Sandy Hetfield and Eddie Dickinson debate the best implementations of healthcare services at the state level. Sandy states that it is "sad,
-			but true" that our healthcare services are not up to date. Eddie claims that over-spending on public healthcare will lead to "wasted money, and
-			wasted years of attempting to improve consumer choice in healthcare.</desc>
-		</div>
-		
-		<div class="poll">
-			<form method="post" action="https://poll.pollcode.com/17834677"><div style="background-color:#999;padding:2px;width:175px;font-family:Arial;font-size:small;color:#000;"><div style="padding:2px 0px 4px 2px;"><strong>Do you like pie?</strong></div><input type="radio" name="answer" value="1" id="answer178346771" style="float:left;" /><label for="answer178346771" style="float:left;width:150px;">Yes</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer178346772" style="float:left;" /><label for="answer178346772" style="float:left;width:150px;">No</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form>
-		</div>
-		
-		<div class="questions">
-			<desc><b>Top Viewer Concerns</b><br></desc>
-			<desc><b>Top Viewer Concerns</b><br><br></desc>
-			<desc>Eddie, I spend $666 a day on health insurance. It makes me want to run to the hills! How do you expect to fix it?<br><br><br></desc>
-		</div>
-
+	<div class="eventdesc">
+		<desc>Governor Ripub Lycan discusses the conflict in Yemen and how it might end with Somalia invading Russia.</desc>
 	</div>
 
-</div>
-
-<span class="botmiddle">
-	<div class="box" style="width:40%; vertical-align:top;">
-		<div class="label" style="display: inline-block">
-			Agenda
-		</div>
+	<div class="botmiddle">
 		<div class="agenda">
 			<desc>Agenda</desc>
-			<desc>Right now: Sandy gets 5-minute opening statement.</desc>
-			<desc>Next: This debate ends.</desc>
+			<desc>Right now: How bitcoin can help Yemenis.</desc>
+			<desc>Next: Nothing; all you need is bitcoin.</desc>
 		</div>
-	</div>
 
-	<div class ="box" style="width: 40%">
-		<div class="label" style="display: inline-block">
-			Submit Your Own Question
-		</div>
-		<div class="questsubmit">
-			<textarea name="questtext" type="text" class="questtext"></textarea>
-			<input name="submitquest" type="submit"  class="submitquest" value="Send"/>
+		<div class="questions">
+			<desc><b>Top Viewer Concerns</b><br><br></desc>
+			<desc>How to google?<br><br><br></desc>
+			<desc>How can we best cooperate with our allies from Iran?</desc>
 		</div>
 	</div>
-</span>
+	
+
+
+	<div class="poll">
+		<form method="post" action="https://poll.pollcode.com/17834677"><div style="background-color:#999;padding:2px;width:175px;font-family:Arial;font-size:small;color:#000;"><div style="padding:2px 0px 4px 2px;"><strong>Do you like pie?</strong></div><input type="radio" name="answer" value="1" id="answer178346771" style="float:left;" /><label for="answer178346771" style="float:left;width:150px;">Yes</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer178346772" style="float:left;" /><label for="answer178346772" style="float:left;width:150px;">No</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form>
+	</div>
+</div>
 
 </body>
 

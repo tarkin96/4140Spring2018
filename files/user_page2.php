@@ -112,30 +112,46 @@ if (!array_key_exists('login_user', $_SESSION)) {
 
 <div class="bott">
 
-	<div class="eventdesc">
-		<desc>Governor Ripub Lycan discusses the conflict in Yemen and how it might end with Somalia invading Russia.</desc>
-	</div>
-
-	<div class="botmiddle">
-		<div class="agenda">
-			<desc>Agenda</desc>
-			<desc>Right now: How bitcoin can help Yemenis.</desc>
-			<desc>Next: Nothing; all you need is bitcoin.</desc>
+	<div style="display: inline-block;">
+		<div class="eventdesc">
+			<desc>Governor Ripub Lycan discusses the conflict in Yemen and how it might end with Somalia invading Russia.</desc>
 		</div>
-
+		
+		<div class="poll">
+			<form method="post" action="https://poll.pollcode.com/17834677"><div style="background-color:#999;padding:2px;width:175px;font-family:Arial;font-size:small;color:#000;"><div style="padding:2px 0px 4px 2px;"><strong>Do you like pie?</strong></div><input type="radio" name="answer" value="1" id="answer178346771" style="float:left;" /><label for="answer178346771" style="float:left;width:150px;">Yes</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer178346772" style="float:left;" /><label for="answer178346772" style="float:left;width:150px;">No</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form>
+		</div>
+		
 		<div class="questions">
 			<desc><b>Top Viewer Concerns</b><br><br></desc>
 			<desc>How to google?<br><br><br></desc>
 			<desc>How can we best cooperate with our allies from Iran?</desc>
 		</div>
-	</div>
-	
 
-
-	<div class="poll">
-		<form method="post" action="https://poll.pollcode.com/17834677"><div style="background-color:#999;padding:2px;width:175px;font-family:Arial;font-size:small;color:#000;"><div style="padding:2px 0px 4px 2px;"><strong>Do you like pie?</strong></div><input type="radio" name="answer" value="1" id="answer178346771" style="float:left;" /><label for="answer178346771" style="float:left;width:150px;">Yes</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer178346772" style="float:left;" /><label for="answer178346772" style="float:left;width:150px;">No</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form>
 	</div>
+
 </div>
+
+<span class="botmiddle">
+	<div class="box" style="width:40%; vertical-align:top;">
+		<div class="label" style="display: inline-block">
+			Agenda
+		</div>
+		<div class="agenda">
+			<desc>Right now: Review of timeline of events</desc>
+			<desc>Next: Mark Zuckerberg interrogation</desc>
+		</div>
+	</div>
+
+	<div class ="box" style="width: 40%">
+		<div class="label" style="display: inline-block">
+			Submit Your Own Question
+		</div>
+		<div class="questsubmit">
+			<textarea name="questtext" type="text" class="questtext"></textarea>
+			<input name="submitquest" type="submit"  class="submitquest" value="Send"/>
+		</div>
+	</div>
+</span>
 
 </body>
 
