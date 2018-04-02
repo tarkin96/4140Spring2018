@@ -261,3 +261,15 @@ input.submitmsg {
 	
 }
 
+.questsubmit input.questtext {
+    width:95%;
+	height: 95%;
+    background: #999;
+    float: left;
+	display: block;
+}
+  
+input.submitquest { 
+	height: 5%;
+}
+

@@ -143,6 +143,8 @@ if (!array_key_exists('login_user', $_SESSION)) {
 	
 	<div class="questsubmit">
 		<tophead><b>Submit Your Own Question</b></tophead>
+		<input name="usermsg" type="text" class="questtext" />
+		<input name="submitmsg" type="submit"  class="submitquest" value="Send" />
 	</div>
 	
 </div>
