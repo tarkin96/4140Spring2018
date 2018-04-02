@@ -193,6 +193,7 @@ input.submitmsg {
 	background: #999;
 	margin-left: 1%;
 	display: inline-block;
+	overflow: auto;
 }
 
 .eventdesc desc {
@@ -225,6 +226,7 @@ input.submitmsg {
 	height: 7%;
 	background: #999;
 	margin: 0 auto;
+	overflow: auto;
 	
 }
 
