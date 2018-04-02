@@ -112,7 +112,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 
 <div class="bott">
 
-	<div>
+	<div style="display: inline-block;">
 		<div class="eventdesc">
 			<desc>The Senate interrogates Mark Zuckerberg in regards to recent data breaches
 			and the nature of user privacy on Facebook. This follows the recent news that Facebook released data on millions of its users 
