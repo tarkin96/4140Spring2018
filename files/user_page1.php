@@ -125,8 +125,8 @@ if (!array_key_exists('login_user', $_SESSION)) {
 		</div>
 		
 		<div class="questions">
-			<desc><b>Top Viewer Concerns</b><br><br></desc>
-			<desc>What charges are being considered against Zuckerberg?<br><br><br></desc>
+			<desc><b>Top Viewer Concerns</b>desc>
+			<desc>What charges are being considered against Zuckerberg?</desc>
 			<desc>We need to address online privacy concerns.  What is congress going to do about it?</desc>
 		</div>
 
