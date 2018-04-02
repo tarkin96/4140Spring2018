@@ -254,7 +254,6 @@ input.submitmsg {
 	height: 100%;
 	background: #999;
 	margin-left: 3%;
-	overflow: auto;
 }
 
 
@@ -266,9 +265,10 @@ input.submitmsg {
 	color: #999;
     float: left;
 	display: block;
-	padding-bottom: 28%;
+	padding-bottom: 20%;
 	padding-left: 0px;
 	font-size: 14px;
+	overflow: auto;
 }
   
 .questsubmit input.submitquest { 
