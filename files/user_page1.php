@@ -134,7 +134,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 
 </div>
 
-<div class="botmiddle">
+<span class="botmiddle">
 	<div class="box">
 		<div class="label" style="margin-left: 1%; margin-bottom 5%;">
 			Agenda
@@ -154,7 +154,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 			<input name="submitquest" type="submit"  class="submitquest" value="Send"/>
 		</div>
 	</div>
-</div>
+</span>
 
 </body>
 
