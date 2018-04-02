@@ -225,11 +225,13 @@ input.submitmsg {
 	width: 20%;
 	height: 7%;
 	background: #999;
+	margin: 0 auto;
 	overflow: auto;
+	display: inline-block;
 	
 }
 
-.botmiddle .agenda desc {
+.bott .agenda desc {
 	color: #333;
 	display: block;
 }
