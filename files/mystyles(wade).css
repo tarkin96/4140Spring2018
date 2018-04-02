@@ -260,8 +260,8 @@ input.submitmsg {
 
 
 .questsubmit input.questtext {
-    width:95%;
-	height: 95%;
+    width:100%;
+	height: 90%;
     background: white;
 	color: #999;
     float: left;
@@ -269,7 +269,7 @@ input.submitmsg {
 }
   
 .questsubmit input.submitquest { 
-	height: 5%;
+	height: 10%;
 }
 
 .botmiddle .box {
