@@ -270,7 +270,13 @@ input.submitmsg {
 	display: block;
 }
   
-input.submitquest { 
+.questsubmit input.submitquest { 
 	height: 5%;
+}
+
+.label {
+   float: center;
+   color: white;
+   height: 10%;
 }
 

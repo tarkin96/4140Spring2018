@@ -135,18 +135,29 @@ if (!array_key_exists('login_user', $_SESSION)) {
 </div>
 
 <div class="botmiddle">
-	<div class="agenda">
-		<desc>Agenda</desc>
-		<desc>Right now: Review of timeline of events</desc>
-		<desc>Next: Mark Zuckerberg interrogation</desc>
+	<div>
+		<div>
+			<div class="label">
+				Agenda
+			</div>
+			<div class="agenda">
+				<desc>Agenda</desc>
+				<desc>Right now: Review of timeline of events</desc>
+				<desc>Next: Mark Zuckerberg interrogation</desc>
+			</div>
+		</div>
 	</div>
-	
-	<div class="questsubmit">
-		<tophead><b>Submit Your Own Question</b></tophead>
-		<input name="usermsg" type="text" class="questtext" />
-		<input name="submitmsg" type="submit"  class="submitquest" value="Send" />
+
+	<div>
+		<div class="label">
+			Submit You Own Question
+		</div>
+		<div class="questsubmit">
+			<tophead><b>Submit Your Own Question</b></tophead>
+			<input name="usermsg" type="text" class="questtext" />
+			<input name="submitmsg" type="submit"  class="submitquest" value="Send" />
+		</div>
 	</div>
-	
 </div>
 
 </body>
