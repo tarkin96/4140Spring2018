@@ -206,6 +206,10 @@ input.submitmsg {
 	
 }
 
+.bot .poll {
+	float: right;
+}
+
 .botmiddle {
 	border: 10px solid #333;
 	width: 45%;
