@@ -135,7 +135,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 </div>
 
 <span class="botmiddle">
-	<div class="box" style="width:40% vertical-align:top;">
+	<div class="box" style="width:40%; vertical-align:top;">
 		<div class="label" style="display: inline-block">
 			Agenda
 		</div>

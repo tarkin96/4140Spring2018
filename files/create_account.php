@@ -93,8 +93,8 @@ include("templates/page_template.php");
                
                <form action = "" method = "post">
                   <label>Enter Username: </label><input type = "text" name = "username" class = "box"/><br /><br />
-                  <label>Enter Password: </label><input type = "text" name = "password" class = "box" /><br/><br />
-                  <label>Re-Enter Password: </label><input type = "text" name = "password2" class = "box" /><br/><br />
+                  <label>Enter Password: </label><input type = "password" name = "password" class = "box" /><br/><br />
+                  <label>Re-Enter Password: </label><input type = "password" name = "password2" class = "box" /><br/><br />
                   <input type = "submit" value = " Submit "/><br />
                </form>
                
