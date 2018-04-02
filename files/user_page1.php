@@ -137,7 +137,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 <div class="botmiddle">
 	<div>
 		<div>
-			<div class="label">
+			<div class="label" style="margin-left: 1%">
 				Agenda
 			</div>
 			<div class="agenda">
@@ -149,7 +149,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 	</div>
 
 	<div>
-		<div class="label">
+		<div class="label" style="margin-left: 3%">
 			Submit You Own Question
 		</div>
 		<div class="questsubmit">
