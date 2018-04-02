@@ -126,7 +126,6 @@ if (!array_key_exists('login_user', $_SESSION)) {
 		
 		<div class="questions">
 			<desc><b>Top Viewer Concerns</b><br></desc>
-			<desc><b>Top Viewer Concerns</b><br><br></desc>
 			<desc>Eddie, I spend $666 a day on health insurance. It makes me want to run to the hills! How do you expect to fix it?<br><br><br></desc>
 		</div>
 
