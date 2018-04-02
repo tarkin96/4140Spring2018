@@ -277,5 +277,6 @@ input.submitmsg {
 .botmiddle .label {
    color: white;
    height: 10%;
+   display: inline-block;
 }
 
