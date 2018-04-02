@@ -191,6 +191,7 @@ input.submitmsg {
 	width: 45%;
 	height: 7%;
 	background: #999;
+	margin-left: 1%;
 	display: inline-block;
 }
 
@@ -224,7 +225,7 @@ input.submitmsg {
 	height: 7%;
 	background: #999;
 	margin: 0 auto;
-	float: left;
+	
 }
 
 .botmiddle .agenda desc {
