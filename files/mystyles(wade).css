@@ -266,12 +266,13 @@ input.submitmsg {
 	color: #999;
     float: left;
 	display: block;
-	padding-top: 0px;
+	padding-bottom: 28%;
 	padding-left: 0px;
+	font-size: 14px;
 }
   
 .questsubmit input.submitquest { 
-	height: 10%;
+	height: 15%;
 }
 
 .botmiddle .box {
@@ -280,7 +281,7 @@ input.submitmsg {
 
 .botmiddle .box .label {
    color: white;
-   height: 15%;
+   height: 10%;
    display: inline-block;
    margin-left: 3%;
 }
