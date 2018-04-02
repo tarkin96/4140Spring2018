@@ -147,7 +147,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 
 	<div class ="box">
 		<div class="label" style="margin-left: 3%; margin-bottom 5%;">
-			Submit You Own Question
+			Submit Your Own Question
 		</div>
 		<div class="questsubmit">
 			<input name="questtext" type="text" class="questtext"/>

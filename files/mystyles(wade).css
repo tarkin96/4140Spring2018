@@ -272,7 +272,9 @@ input.submitmsg {
 	height: 5%;
 }
 
-.botmiddle .box {}
+.botmiddle .box {
+	vertical-align: top;
+}
 
 .botmiddle .box .label {
    color: white;
