@@ -222,10 +222,11 @@ input.submitmsg {
 
 .botmiddle .agenda {
 	border: 3px solid #333;
-	width: 20%;
-	height: 7%;
+	width: 100%;
+	height: 100%;
 	background: #999;
-	margin: 0 auto;
+	margin-left: 1%;
+	float: left;
 	overflow: auto;
 	
 }
