@@ -273,7 +273,7 @@ input.submitmsg {
 }
 
 .botmiddle .box {
-	
+	display: inline-block;
 }
 
 .botmiddle .box .label {
