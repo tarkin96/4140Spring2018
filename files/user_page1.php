@@ -141,6 +141,10 @@ if (!array_key_exists('login_user', $_SESSION)) {
 		<desc>Next: Mark Zuckerberg interrogation</desc>
 	</div>
 	
+	<div class="questsubmit">
+		<tophead><b>Submit Your Own Question</b></tophead>
+	</div>
+	
 </div>
 
 </body>
