@@ -189,9 +189,8 @@ input.submitmsg {
 .eventdesc {
 	border: 10px solid #333;
 	width: 45%;
-	height: 10%;
+	height: 7%;
 	background: #999;
-	float: top;
 	margin-left: 21%;
 	display: inline-block;
 }
@@ -220,12 +219,13 @@ input.submitmsg {
 	float: top;
 }
 
-.botmiddle .agenda {
+.bott .agenda {
 	border: 3px solid #333;
-	width: 100%;
+	width: 30%;
 	height: 100%;
 	background: #999;
 	margin: 0 auto;
+	float: left;
 }
 
 .botmiddle .agenda desc {
