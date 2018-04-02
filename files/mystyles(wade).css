@@ -257,9 +257,7 @@ input.submitmsg {
 	overflow: auto;
 }
 
-.botmiddle .questsubmit tophead {
-	
-}
+
 
 .questsubmit input.questtext {
     width:95%;
@@ -274,7 +272,9 @@ input.submitmsg {
 	height: 5%;
 }
 
-.botmiddle .label {
+.botmiddle .box {}
+
+.botmiddle .box .label {
    color: white;
    height: 10%;
    display: inline-block;
