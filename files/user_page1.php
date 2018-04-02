@@ -131,19 +131,16 @@ if (!array_key_exists('login_user', $_SESSION)) {
 		</div>
 
 	</div>
-	<div class="botmiddle">
-		<div class="agenda">
-			<desc>Agenda</desc>
-			<desc>Right now: Review of timeline of events</desc>
-			<desc>Next: Mark Zuckerberg interrogation</desc>
-		</div>
-		
 
+</div>
+
+<div class="botmiddle">
+	<div class="agenda">
+		<desc>Agenda</desc>
+		<desc>Right now: Review of timeline of events</desc>
+		<desc>Next: Mark Zuckerberg interrogation</desc>
 	</div>
 	
-
-
-
 </div>
 
 </body>
