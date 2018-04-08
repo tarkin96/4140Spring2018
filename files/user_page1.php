@@ -19,7 +19,8 @@ if (!array_key_exists('login_user', $_SESSION)) {
 			// do your things
 			//return false;
 		//});
-
+		document.getElementById("usermsg").value = "";
+		document.getElementById("submitmsg").value = "";
 		return false;
 	}
 
@@ -115,7 +116,6 @@ if (!array_key_exists('login_user', $_SESSION)) {
 			<div id="in"> 
 				<input name="usermsg" type="text" class="usermsg" />
 				<input name="submitmsg" type="button"  class="submitmsg" value="Send" onclick="chat();"/>
-				<button onclick="chat();" type="button">Send2 </button>
 			</div>
 		</form>
 	</div>
