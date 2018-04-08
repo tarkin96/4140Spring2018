@@ -100,8 +100,8 @@ if (!array_key_exists('login_user', $_SESSION)) {
 						echo "<br>";
 					}
 				}
-			//}//end of if
-			?>*/
+			//}//end of if*/
+			?>
 		</div>
 		
 	
