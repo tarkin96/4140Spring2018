@@ -8,24 +8,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 ?>
 
 <html>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
-<script type="text/javascript">
-	function chat() {
-		document.getElementById("#chatbox").value = "";
-		$.ajax({type:'POST', url: 'chat.php', data:$('message').serialize(), success: function(response) {
-			//$('#ContactForm').find('.form_result').html(response);
-			$("#chatbox").append(response);
-		}});
 
-		//$(document).on('submit', '#my-form', function() {
-			// do your things
-			//return false;
-		//});
-		document.getElementById("usermsg").value = "";
-		document.getElementById("submitmsg").value = "";
-		return false;
-	}
-</script>
 <head>
 
 </head>
