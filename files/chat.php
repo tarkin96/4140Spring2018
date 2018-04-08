@@ -5,6 +5,7 @@
 	//$result = mysqli_query($db,$chat_insert_query);
 	//echo "Hello, wade!!!";
 	print_r($_POST);
+	echo $_SERVER['REQUEST_METHOD'];
 	if (isset($_POST['submitmsg'])) { 
 		//echo "button has been pressed"; 
 
