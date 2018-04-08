@@ -6,9 +6,10 @@ session_start();
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 <script type="text/javascript">
 	function chat() {
-		$("#chatbox").empty();
+		
 		$.ajax({type:'POST', url: 'chat.php', data:$('message').serialize(), success: function(response) {
 			//$('#ContactForm').find('.form_result').html(response);
+			$("#chatbox").empty();
 			$("#chatbox").append(response);
 		}});
 
