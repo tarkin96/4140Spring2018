@@ -25,12 +25,11 @@ if (!array_key_exists('login_user', $_SESSION)) {
 		document.getElementById("submitmsg").value = "";
 		return false;
 	}
-	chat();
 </script>
 <head>
 
 </head>
-<body>
+<body onload="chat();">
 <div class="middle">
 	<div class="vertical-menu">
 		<a href="#recserv" class="cascade">Recommended Services</a>
