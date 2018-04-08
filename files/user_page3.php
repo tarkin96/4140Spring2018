@@ -7,13 +7,11 @@ if (!array_key_exists('login_user', $_SESSION)) {
 ?>
 
 <html>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
-<script type="text/javascript">
-</script>
+
 <head>
 
 </head>
-<body>
+<body onload="chat();">
 <div class="middle">
 	<div class="vertical-menu">
 		<a href="#recserv" class="cascade">Recommended Services</a>
@@ -59,7 +57,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 			<p class="welcome">Stream Chat</p>
 			<div style="clear:both"></div>
 		</div>
-
+<form name="message" method="POST" action="">
 		<div id="chatbox" action="">
 			<?php
 			if (isset($_POST['submitmsg'])) { 
@@ -101,7 +99,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 		
 	
 	
-		<form name="message" method="POST" action="">
+		
 			<div id="in"> 
 				<input name="usermsg" type="text" class="usermsg" />
 				<input name="submitmsg" type="submit"  class="submitmsg" value="Send" />
