@@ -15,11 +15,11 @@
 		//echo "INSERT INTO Studio_Day_Chat VALUES ($un, $un2)";
 		$chat_insert_query = "INSERT INTO $un3 VALUES ($un, $un2)";
 		$result = mysqli_query($db,$chat_insert_query);
-
+		unset($_POST['usermsg']);
+		unset($_POST['submitmsg']);
 	}
 	$chat_table = $_SESSION['Stream_Chat'];
-	unset($_POST['usermsg']);
-	unset($_POST['submitmsg']);
+
 	//if($_SERVER["REQUEST_METHOD"] == "POST") {
 	$grab_chat_query = "SELECT * FROM $chat_table";
 	$chat_result = mysqli_query($db,$grab_chat_query);
