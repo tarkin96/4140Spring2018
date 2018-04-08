@@ -9,11 +9,13 @@ if (!array_key_exists('login_user', $_SESSION)) {
 <html>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 <script type="text/javascript">
-	function send_chat_info() {
-		var xhttp = new XMLHttpRequest();
-		xhttp.open("POST", "chat.php", true);
-		document.test("wade sucks");
-		xhttp.send();
+	function chat() {
+		$.ajax({type:'POST', url: 'chat.php', data:$('message').serialize(), success: function(response) {
+			//$('#ContactForm').find('.form_result').html(response);
+			$("#chatbox").append(response);
+		}});
+
+		return false;
 	}
 
 </script>
@@ -66,52 +68,48 @@ if (!array_key_exists('login_user', $_SESSION)) {
 			<p class="welcome">Stream Chat</p>
 			<div style="clear:both"></div>
 		</div>
-
-		<div id="chatbox" action="">
-			<?php
-			/*if (isset($_POST['submitmsg'])) { 
-					//echo "button has been pressed"; 
-				
-				$un = "'" . $_SESSION['login_user'] . "'";
-				//print_r($_POST);
-				$un2 = "'" . $_POST['usermsg'] . "'";
-				//echo "INSERT INTO Studio_Day_Chat VALUES ($un, $un2)";
-				$chat_insert_query = "INSERT INTO `Studio_Day_Chat` VALUES ($un, $un2)";
-				$result = mysqli_query($db,$chat_insert_query);
-
-			}
-			unset($_POST['usermsg']);
-			unset($_POST['submitmsg']);
-			//if($_SERVER["REQUEST_METHOD"] == "POST") {
-				$grab_chat_query = "SELECT * FROM `Studio_Day_Chat`";
-				$chat_result = mysqli_query($db,$grab_chat_query);
-				//$chat_rows = mysqli_fetch_array($chat_result,MYSQLI_ASSOC);	
-				//if ($chat_rows) {
-					//foreach($chat_rows as $row) {
-						//echo $row;
-					//}
-				//}
-				if ($chat_result) {
-					while($chat_rows = mysqli_fetch_array($chat_result,MYSQLI_ASSOC))	
-					{
-						echo "<strong>";
-						echo $chat_rows['User_Name'] . " : ";
-						echo "</strong>";
-						echo $chat_rows['Message'];
-						echo "<br>";
-					}
-				}
-			//}//end of if*/
-			?>
-		</div>
-		
-	
-	
 		<form name="message" method="POST" action="">
+			<div id="chatbox" action="">
+				<?php
+				/*if (isset($_POST['submitmsg'])) { 
+						//echo "button has been pressed"; 
+					
+					$un = "'" . $_SESSION['login_user'] . "'";
+					//print_r($_POST);
+					$un2 = "'" . $_POST['usermsg'] . "'";
+					//echo "INSERT INTO Studio_Day_Chat VALUES ($un, $un2)";
+					$chat_insert_query = "INSERT INTO `Studio_Day_Chat` VALUES ($un, $un2)";
+					$result = mysqli_query($db,$chat_insert_query);
+
+				}
+				unset($_POST['usermsg']);
+				unset($_POST['submitmsg']);
+				//if($_SERVER["REQUEST_METHOD"] == "POST") {
+					$grab_chat_query = "SELECT * FROM `Studio_Day_Chat`";
+					$chat_result = mysqli_query($db,$grab_chat_query);
+					//$chat_rows = mysqli_fetch_array($chat_result,MYSQLI_ASSOC);	
+					//if ($chat_rows) {
+						//foreach($chat_rows as $row) {
+							//echo $row;
+						//}
+					//}
+					if ($chat_result) {
+						while($chat_rows = mysqli_fetch_array($chat_result,MYSQLI_ASSOC))	
+						{
+							echo "<strong>";
+							echo $chat_rows['User_Name'] . " : ";
+							echo "</strong>";
+							echo $chat_rows['Message'];
+							echo "<br>";
+						}
+					}
+				//}//end of if*/
+				?>
+			</div>
+			
 			<div id="in"> 
 				<input name="usermsg" type="text" class="usermsg" />
-				<input name="submitmsg" type="button"  class="submitmsg" value="Send" />
-				<button type="button" onclick="send_chat_info()">Send2</button>
+				<input name="submitmsg" type="submit"  class="submitmsg" value="Send" />
 			</div>
 		</form>
 	</div>
