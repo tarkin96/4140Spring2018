@@ -15,8 +15,9 @@ function loadDoc() {
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById("demo").innerHTML = this.responseText;
     }
+	document.write("wade sucks");
   };
-  xhttp.open("POST", "demo_post.asp", true);
+  xhttp.open("POST", "chat.php", true);
   xhttp.send();
 }
 </script>

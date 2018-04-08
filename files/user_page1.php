@@ -11,9 +11,9 @@ if (!array_key_exists('login_user', $_SESSION)) {
 <script type="text/javascript">
 	function send_chat_info() {
 		var xhttp = new XMLHttpRequest();
-		xhttp.open("POST", "user_page1.php", true);
-		xhttp.send();
-<?php echo "hello, wadeking" ?>
+		//xhttp.open("POST", "user_page1.php", true);
+		document.test("wade sucks");
+		//xhttp.send();
 	}
 
 </script>
