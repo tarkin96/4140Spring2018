@@ -60,7 +60,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 <form name="message" method="POST" action="">
 		<div id="chatbox" action="">
 			<?php
-			if (isset($_POST['submitmsg'])) { 
+			/*if (isset($_POST['submitmsg'])) { 
 					//echo "button has been pressed"; 
 				
 				$un = "'" . $_SESSION['login_user'] . "'";
@@ -92,7 +92,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 						echo "<br>";
 					}
 				}
-			//}//end of if
+			//}//end of if*/
 			?>
 		</div>
 		
