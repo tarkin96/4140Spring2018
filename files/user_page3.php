@@ -14,7 +14,7 @@ $_SESSION['Stream_Chat'] = "`Stream3_Chat`";
 <head>
 
 </head>
-<body onload="chat();">
+<body onload="load_chat();">
 <div class="middle">
 	<div class="vertical-menu">
 		<a href="#recserv" class="cascade">Recommended Services</a>
