@@ -60,7 +60,7 @@ $_SESSION['Stream_Chat'] = "`Stream3_Chat`";
 			<p class="welcome">Stream Chat</p>
 			<div style="clear:both"></div>
 		</div>
-<form name="message" method="POST" action="" onsubmit="return chat();>
+<form name="message" method="POST" action="" onsubmit="event.preventDefault(); validateMyForm();">
 		<div id="chatbox" action="">
 			<?php
 			/*if (isset($_POST['submitmsg'])) { 
