@@ -3,9 +3,9 @@
 	session_start();
 	//$chat_insert_query = "INSERT INTO `Studio_Day_Chat` VALUES ('$_SESSION['login_user']', $text);
 	//$result = mysqli_query($db,$chat_insert_query);
-	//echo "Hello, wade!!!";
+	echo "Hello, wade!!!";
 
-	if ($_SERVER['REQUEST_METHOD'] === 'POST') { 
+	if (isset($_POST['submitmsg'])) { 
 		//echo "button has been pressed"; 
 
 		$un = "'" . $_SESSION['login_user'] . "'";

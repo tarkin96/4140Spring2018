@@ -16,24 +16,7 @@ session_start();
 			// do your things
 			//return false;
 		//});
-		document.getElementById("usermsg").value = "";
-		document.getElementById("submitmsg").value = "";
-		return false;
-	}
-
-	function load_chat() {
-		$("#chatbox").empty();
-		$.ajax({type:'GET', url: 'chat.php', data:$('message').serialize(), success: function(response) {
-			//$('#ContactForm').find('.form_result').html(response);
-			$("#chatbox").append(response);
-		}});
-
-		//$(document).on('submit', '#my-form', function() {
-			// do your things
-			//return false;
-		//});
-		document.getElementById("usermsg").value = "";
-		document.getElementById("submitmsg").value = "";
+		$.("usermsg").value = "";
 		return false;
 	}
 
