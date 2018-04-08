@@ -7,7 +7,7 @@ session_start();
 <script type="text/javascript">
 	function chat() {
 		
-		$.ajax({method:'POST', url: 'chat.php', data:$("[name='message']").serialize(), success: function(response) {
+		$.ajax({type:'POST', url: 'chat.php', data:$("[name='message']").serialize(), success: function(response) {
 			//$('#ContactForm').find('.form_result').html(response);
 			$("#chatbox").empty();
 			$("#chatbox").append(response);
