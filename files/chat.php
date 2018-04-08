@@ -6,7 +6,7 @@
 	//echo "Hello, wade!!!";
 	//print_r($_POST);
 	//echo $_SERVER['REQUEST_METHOD'];
-	if (isset($_POST['usermsg'])) { 
+	if (isset($_POST['usermsg']) and $_POST['usermsg'] != "") { 
 		//echo "button has been pressed"; 
 
 		$un = "'" . $_SESSION['login_user'] . "'";
