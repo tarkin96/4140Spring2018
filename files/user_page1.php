@@ -4,7 +4,9 @@ include("config.php");
 if (!array_key_exists('login_user', $_SESSION)) {
 	header("Location: login.php");
 }
-
+$_SESSION['Streamer'] = "`Plaue_4140_S2018`";
+$_SESSION['Stream'] = "`Studio_Day`";
+$_SESSION['Stream_Chat'] = "`Studio_Day_Chat`";
 ?>
 
 <html>

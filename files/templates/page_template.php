@@ -21,9 +21,9 @@ session_start();
 		return false;
 	}
 
-	setInterval(function(){
-	  chat();
-	}, 1000);
+	//setInterval(function(){
+	  //chat();
+	//}, 1000);
 </script>
 
 <head>
