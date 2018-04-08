@@ -110,6 +110,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 			<div id="in"> 
 				<input name="usermsg" type="text" class="usermsg" />
 				<input name="submitmsg" type="submit"  class="submitmsg" value="Send" />
+				<button onclick="chat();">Send2 </button>
 			</div>
 		</form>
 	</div>
