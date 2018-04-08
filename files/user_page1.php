@@ -11,7 +11,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 <script type="text/javascript">
 	function send_chat_info() {
 		var xhttp = new XMLHttpRequest();
-		xhttp.open("POST", "chat.php", true);
+		xhttp.open("POST", "user_page1.php", true);
 		xhttp.send();
 <?php echo "hello, wadeking" ?>
 	}
@@ -111,7 +111,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 			<div id="in"> 
 				<input name="usermsg" type="text" class="usermsg" />
 				<input name="submitmsg" type="button"  class="submitmsg" value="Send" />
-				<button type="Button" onclick="send_chat_info()">Send2</button>
+				<button type="button" onclick="send_chat_info()">Send2</button>
 			</div>
 		</form>
 	</div>
