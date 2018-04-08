@@ -9,6 +9,12 @@ if (!array_key_exists('login_user', $_SESSION)) {
 <html>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 <script type="text/javascript">
+	function send_chat_info() {
+		var xhttp = new XMLHttpRequest();
+		xhttp.open("POST", "chat.php", true);
+		xhttp.send();
+	}
+
 </script>
 <head>
 
@@ -62,7 +68,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 
 		<div id="chatbox" action="">
 			<?php
-			if (isset($_POST['submitmsg'])) { 
+			/*if (isset($_POST['submitmsg'])) { 
 					//echo "button has been pressed"; 
 				
 				$un = "'" . $_SESSION['login_user'] . "'";
@@ -95,7 +101,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 					}
 				}
 			//}//end of if
-			?>
+			?>*/
 		</div>
 		
 	
@@ -103,7 +109,8 @@ if (!array_key_exists('login_user', $_SESSION)) {
 		<form name="message" method="POST" action="">
 			<div id="in"> 
 				<input name="usermsg" type="text" class="usermsg" />
-				<input name="submitmsg" type="submit"  class="submitmsg" value="Send" />
+				<input name="submitmsg" type="button"  class="submitmsg" value="Send" />
+				<button type="Button" onClick="send_chat_info()">Send2</button>
 			</div>
 		</form>
 	</div>
