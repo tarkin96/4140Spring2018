@@ -16,7 +16,7 @@ session_start();
 			// do your things
 			//return false;
 		//});
-		$.("usermsg").value = "";
+		$("usermsg").val("");
 		return false;
 	}
 
@@ -34,9 +34,7 @@ session_start();
 	<link rel="stylesheet"
 	href="mystyles(wade).css">
 </head>
-<script> 
 
-</script>
 <body style="background-color:#444">
 
 <div class="topnav">
