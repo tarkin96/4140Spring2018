@@ -17,7 +17,7 @@ session_start();
 			// do your things
 			//return false;
 		//});
-		$("usermsg").val("");
+		document.getElementsByName("usermsg")[0].value = "";
 		return false;
 	}
 
