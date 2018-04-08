@@ -11,7 +11,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 <head>
 
 </head>
-<body<body onload="chat();">
+<body onload="chat();">
 <div class="middle">
 	<div class="vertical-menu">
 		<a href="#recserv" class="cascade">Recommended Services</a>

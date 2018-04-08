@@ -20,6 +20,10 @@ session_start();
 		document.getElementById("submitmsg").value = "";
 		return false;
 	}
+
+	setInterval(function(){
+	  chat();
+	}, 1000);
 </script>
 
 <head>
@@ -31,7 +35,9 @@ session_start();
 	<link rel="stylesheet"
 	href="mystyles(wade).css">
 </head>
+<script> 
 
+</script>
 <body style="background-color:#444">
 
 <div class="topnav">
