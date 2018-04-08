@@ -13,6 +13,7 @@ if (!array_key_exists('login_user', $_SESSION)) {
 		var xhttp = new XMLHttpRequest();
 		xhttp.open("POST", "chat.php", true);
 		xhttp.send();
+<?php echo "hello, wadeking" ?>
 	}
 
 </script>
