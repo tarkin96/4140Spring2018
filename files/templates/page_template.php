@@ -40,12 +40,12 @@ session_start();
 
 <div class="topnav">
 	<a class="active" href="home_page.php">Home</a>
-	<a href="#news">Browse</a>
-	<a href="#archive">Archive</a>
-	<a href="#officials">Officials</a>
-	<a href="#constituencies">Constituencies</a>
-	<a href="#account">Account</a>
-	<a href="#help">Help</a>
+	<a href="browse.php">Browse</a>
+	<a href="archive.php">Archive</a>
+	<a href="officials.php">Officials</a>
+	<a href="constituencies.php">Constituencies</a>
+	<a href="account_info.php">Account</a>
+	<a href="help.php">Help</a>
 	<?php
 		if (array_key_exists('login_user', $_SESSION)) {
 			//echo "Welcome, {$_SESSION['login_user']}!";
