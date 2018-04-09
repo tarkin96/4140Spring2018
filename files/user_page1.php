@@ -143,7 +143,7 @@ $_SESSION['Stream_Chat'] = "`Studio_Day_Chat`";
 		</div>
 	</div>
 
-	<div class ="box" style="width: 40%">
+	<div class ="box" style="width: 40%" name="questionbox">
 		<div class="label" style="display: inline-block">
 			Submit Your Own Question
 		</div>
