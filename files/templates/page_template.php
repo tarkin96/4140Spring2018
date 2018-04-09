@@ -12,7 +12,7 @@ session_start();
 			$("#chatbox").empty();
 			$("#chatbox").append(response);
 			//$("#chatbox").scrollTop = $("#chatbox").scrollHeight;
-			window.scrollTo(0,document.body.scrollHeight);
+			$("#chatbox").scrollTo(0,$("#chatbox").scrollHeight);
 		}});
 		
 
