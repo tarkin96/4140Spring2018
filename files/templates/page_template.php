@@ -39,13 +39,13 @@ session_start();
 <body style="background-color:#444">
 
 <div class="topnav">
-	<a class="<?php if (strpos($_SERVER['REQUEST_URI'], "home_page.php")) {?> active <?php }?>" href="home_page.php">Home</a>
-	<a href="browse.php">Browse</a>
-	<a href="archive.php">Archive</a>
-	<a href="officials.php">Officials</a>
-	<a href="constituencies.php">Constituencies</a>
-	<a href="account_info.php">Account</a>
-	<a href="help.php">Help</a>
+	<a class="<?php if (strpos($_SERVER['REQUEST_URI'], "home_page.php")) {?>active<?php }?>" href="home_page.php">Home</a>
+	<a class="<?php if (strpos($_SERVER['REQUEST_URI'], "browse.php")) {?>active<?php }?>" href="browse.php">Browse</a>
+	<a class="<?php if (strpos($_SERVER['REQUEST_URI'], "archive.php")) {?>active<?php }?>" href="archive.php">Archive</a>
+	<a class="<?php if (strpos($_SERVER['REQUEST_URI'], "officials.php")) {?>active<?php }?>" href="officials.php">Officials</a>
+	<a class="<?php if (strpos($_SERVER['REQUEST_URI'], "constituencies.php")) {?>active<?php }?>" href="constituencies.php">Constituencies</a>
+	<a class="<?php if (strpos($_SERVER['REQUEST_URI'], "account_info.php")) {?>active<?php }?>" href="account_info.php">Account</a>
+	<a class="<?php if (strpos($_SERVER['REQUEST_URI'], "help.php")) {?>active<?php }?>" href="help.php">Help</a>
 	<?php
 		if (array_key_exists('login_user', $_SESSION)) {
 			//echo "Welcome, {$_SESSION['login_user']}!";
