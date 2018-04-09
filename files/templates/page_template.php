@@ -25,7 +25,7 @@ session_start();
 	function submitQuest() {
 		$.ajax({type:'POST', url: 'submitQuest.php', data:$("[name='questsubmit']").serialize(), success: function(response) {
 			//$('#ContactForm').find('.form_result').html(response);
-			document.getElementsByName("questionbox")[0].append(response);
+			document.getElementsByName("questsubmit")[0].append(response);
 			document.getElementById("questtext").value = "";
 		}});
 	}
@@ -49,7 +49,8 @@ session_start();
 
 <div class="topnav">
 	<a class="<?php if (strpos($_SERVER['REQUEST_URI'], "home_page.php")) {?>active<?php }?>" href="home_page.php">Home</a>
-	<a class="<?php if (strpos($_SERVER['REQUEST_URI'], "browse.php")) {?>active<?php }?>" href="browse.php">Browse</a>
+	<a class="<?php if (strpos($_SERVER['REQUEST_URI'], "browse.php") or strpos($_SERVER['REQUEST_URI'], "user_page"))
+		{?>active<?php }?>" href="browse.php">Browse</a>
 	<a class="<?php if (strpos($_SERVER['REQUEST_URI'], "archive.php")) {?>active<?php }?>" href="archive.php">Archive</a>
 	<a class="<?php if (strpos($_SERVER['REQUEST_URI'], "officials.php")) {?>active<?php }?>" href="officials.php">Officials</a>
 	<a class="<?php if (strpos($_SERVER['REQUEST_URI'], "constituencies.php")) {?>active<?php }?>" href="constituencies.php">Constituencies</a>
