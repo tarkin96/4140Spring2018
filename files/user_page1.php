@@ -147,9 +147,9 @@ $_SESSION['Stream_Chat'] = "`Studio_Day_Chat`";
 		<div class="label" style="display: inline-block">
 			Submit Your Own Question
 		</div>
-		<div class="questsubmit">
+		<div class="questsubmit" name="questsubmit">
 			<textarea name="questtext" type="text" class="questtext" id="questtext"></textarea>
-			<input name="submitquest" type="submit"  class="submitquest" value="Send" onclick="submitQuest();"/>
+			<input name="submitquest" type="button"  class="submitquest" value="Send" onclick="submitQuest();"/>
 		</div>
 	</div>
 </span>

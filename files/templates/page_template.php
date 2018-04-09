@@ -26,7 +26,7 @@ session_start();
 		$.ajax({type:'POST', url: 'submitQuest.php', data:$("[name='questsubmit']").serialize(), success: function(response) {
 			//$('#ContactForm').find('.form_result').html(response);
 			document.getElementsByName("questionbox")[0].append(response);
-			$("#questtext").empty();
+			document.getElementById("questtext").value = "";
 		}});
 	}
 
