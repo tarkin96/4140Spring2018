@@ -11,8 +11,9 @@ session_start();
 			//$('#ContactForm').find('.form_result').html(response);
 			$("#chatbox").empty();
 			$("#chatbox").append(response);
+			$("#chatbox").scrollTop = $("#chatbox").scrollHeight;
 		}});
-		$("#chatbox").scrollTop = $("#chatbox").scrollHeight;
+		
 
 		//$(document).on('submit', '#my-form', function() {
 			// do your things
