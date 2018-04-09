@@ -39,7 +39,7 @@ session_start();
 <body style="background-color:#444">
 
 <div class="topnav">
-	<a class="active" href="home_page.php">Home</a>
+	<a <?php if (__FILE__ == home_page.php) {?> class="active" <?php }?> href="home_page.php">Home</a>
 	<a href="browse.php">Browse</a>
 	<a href="archive.php">Archive</a>
 	<a href="officials.php">Officials</a>
