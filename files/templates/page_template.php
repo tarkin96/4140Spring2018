@@ -11,7 +11,7 @@ session_start();
 			//$('#ContactForm').find('.form_result').html(response);
 			$("#chatbox").empty();
 			$("#chatbox").append(response);
-			$("#chatbox").scrollTop($("#chatbox").prop("scrollHeight"));
+			$("#chatbox").append($("#chatbox").scrollHeight);
 		}});
 		
 
