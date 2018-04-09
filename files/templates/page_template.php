@@ -10,9 +10,10 @@ session_start();
 		$.ajax({type:'POST', url: 'chat.php', data:$("[name='message']").serialize(), success: function(response) {
 			//$('#ContactForm').find('.form_result').html(response);
 			$("#chatbox").empty();
+			$("#chatbox").append($("#chatbox").scrollHeight);
 			$("#chatbox").append(response);
 			//$("#chatbox").scrollTop = $("#chatbox").scrollHeight;
-			$("#chatbox").scrollTo(0,$("#chatbox").scrollHeight);
+			
 		}});
 		
 
