@@ -22,6 +22,13 @@ session_start();
 		return false;
 	}
 
+	function submitQuest() {
+		$.ajax({type:'POST', url: 'submitQuest.php', data:$("[name='questsubmit']").serialize(), success: function(response) {
+			//$('#ContactForm').find('.form_result').html(response);
+			document.write(5 + 6);
+		}});
+	}
+
 	//setInterval(function(){
 	  //chat();
 	//}, 1000);
