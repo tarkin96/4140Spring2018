@@ -55,24 +55,29 @@ $_SESSION['Stream_Chat'] = "`Studio_Day_Chat`";
 		<div class="label">Senate Judiciary Committee on FaceBook Privacy</div>
 	</div>
 
-<?php if (array_key_exists('login_user', $_SESSION)) { ?>
+
 	<div id="wrapper">
 		<div id="menu">
 			<p class="welcome">Stream Chat</p>
 			<div style="clear:both"></div>
 		</div>
+
 		<form name="message" method="POST" action="" onsubmit="event.preventDefault(); chat();">
 			<div id="chatbox" action="">
 
 			</div>
-			
+		<?php if (array_key_exists('login_user', $_SESSION)) { ?>			
 			<div id="in"> 
 				<input name="usermsg" type="text" class="usermsg" />
 				<input name="submitmsg" type="button"  class="submitmsg" value="Send" onclick="chat();"/>
 			</div>
+		<?php } else { ?>
+				You must login to submit to the chat. 
+
+		<?php } ?>
 		</form>
 	</div>
-<?php } ?>
+
 </div>
 
 <div class="bott">
