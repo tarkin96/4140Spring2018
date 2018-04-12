@@ -77,7 +77,7 @@
 			</div>
 
 		</div>
-		<a href="create_account.php">Create an Account</a>
+		<a class="create_account" href="create_account.php">Create an Account</a>
 	</div>
 	
 	

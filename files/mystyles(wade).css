@@ -286,3 +286,20 @@ input.submitmsg {
    margin-left: 3%;
 }
 
+
+a.create_account:link {
+    color: red;
+}
+
+a.create_account:visited {
+    color: hotpink;
+}
+
+a.create_account:hover {
+    color: green;
+}
+
+a.create_account:active {
+    color: hotpink;
+}
+

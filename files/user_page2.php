@@ -1,9 +1,9 @@
 <?php
 include("templates/page_template.php");
 include("config.php");
-if (!array_key_exists('login_user', $_SESSION)) {
-	header("Location: login.php");
-}
+//if (!array_key_exists('login_user', $_SESSION)) {
+	//header("Location: login.php");
+//}
 $_SESSION['Streamer'] = "`Streamer2`";
 $_SESSION['Stream'] = "`Stream2`";
 $_SESSION['Stream_Chat'] = "`Stream2_Chat`";
