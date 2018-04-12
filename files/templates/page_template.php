@@ -31,9 +31,14 @@ session_start();
 		}});
 	}
 
-	//setInterval(function(){
-	  //chat();
-	//}, 1000);
+	setInterval(function(){
+	  	$.ajax({type:'POST', url: 'chat_check.php', data:"", success: function(response) {
+			//$('#ContactForm').find('.form_result').html(response);
+			//$("#chatbox").empty();
+			//$("#chatbox").append(response);
+			//$("#chatbox").append($("#chatbox").scrollHeight);
+		}});
+	}, 2000);
 </script>
 
 <head>
