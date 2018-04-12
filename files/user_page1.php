@@ -1,9 +1,9 @@
 <?php
 include("templates/page_template.php");
 include("config.php");
-if (!array_key_exists('login_user', $_SESSION)) {
-	header("Location: login.php");
-}
+//if (!array_key_exists('login_user', $_SESSION)) {
+	//header("Location: login.php");
+//}
 $_SESSION['Streamer'] = "`Plaue_4140_S2018`";
 $_SESSION['Stream'] = "`Studio_Day`";
 $_SESSION['Stream_Chat'] = "`Studio_Day_Chat`";
@@ -55,6 +55,7 @@ $_SESSION['Stream_Chat'] = "`Studio_Day_Chat`";
 		<div class="label">Senate Judiciary Committee on FaceBook Privacy</div>
 	</div>
 
+<?php if (array_key_exists('login_user', $_SESSION)) { ?>
 	<div id="wrapper">
 		<div id="menu">
 			<p class="welcome">Stream Chat</p>
@@ -62,41 +63,7 @@ $_SESSION['Stream_Chat'] = "`Studio_Day_Chat`";
 		</div>
 		<form name="message" method="POST" action="" onsubmit="event.preventDefault(); chat();">
 			<div id="chatbox" action="">
-				<?php
-				/*if (isset($_POST['submitmsg'])) { 
-						//echo "button has been pressed"; 
-					
-					$un = "'" . $_SESSION['login_user'] . "'";
-					//print_r($_POST);
-					$un2 = "'" . $_POST['usermsg'] . "'";
-					//echo "INSERT INTO Studio_Day_Chat VALUES ($un, $un2)";
-					$chat_insert_query = "INSERT INTO `Studio_Day_Chat` VALUES ($un, $un2)";
-					$result = mysqli_query($db,$chat_insert_query);
 
-				}
-				unset($_POST['usermsg']);
-				unset($_POST['submitmsg']);
-				//if($_SERVER["REQUEST_METHOD"] == "POST") {
-					$grab_chat_query = "SELECT * FROM `Studio_Day_Chat`";
-					$chat_result = mysqli_query($db,$grab_chat_query);
-					//$chat_rows = mysqli_fetch_array($chat_result,MYSQLI_ASSOC);	
-					//if ($chat_rows) {
-						//foreach($chat_rows as $row) {
-							//echo $row;
-						//}
-					//}
-					if ($chat_result) {
-						while($chat_rows = mysqli_fetch_array($chat_result,MYSQLI_ASSOC))	
-						{
-							echo "<strong>";
-							echo $chat_rows['User_Name'] . " : ";
-							echo "</strong>";
-							echo $chat_rows['Message'];
-							echo "<br>";
-						}
-					}
-				//}//end of if*/
-				?>
 			</div>
 			
 			<div id="in"> 
@@ -105,7 +72,7 @@ $_SESSION['Stream_Chat'] = "`Studio_Day_Chat`";
 			</div>
 		</form>
 	</div>
-
+<?php } ?>
 </div>
 
 <div class="bott">
