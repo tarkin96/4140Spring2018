@@ -29,7 +29,8 @@
 	else {
 		$check_time = $_SESSION['last_check'];
 		//$grab_chat_query = "SELECT * FROM $chat_table WHERE Time_Stamp >= $check_time";
-		$grab_chat_query = "SELECT * FROM $chat_table";
+		//$grab_chat_query = "SELECT * FROM $chat_table";
+		echo $check_time;
 	}
 	
 	//if($_SERVER["REQUEST_METHOD"] == "POST") {
