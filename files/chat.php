@@ -23,9 +23,9 @@
 
 	//if($_SERVER["REQUEST_METHOD"] == "POST") {
 	$grab_chat_query = "SELECT * FROM $chat_table";
-	$_SESSION['last_check'] = date("Y-m-d H:i:s");
+	
 	$chat_result = mysqli_query($db,$grab_chat_query);
-
+	$_SESSION['last_check'] = date("Y-m-d H:i:s");
 	//$chat_rows = mysqli_fetch_array($chat_result,MYSQLI_ASSOC);	
 	//if ($chat_rows) {
 	//foreach($chat_rows as $row) {
