@@ -55,27 +55,7 @@ $_SESSION['Stream_Chat'] = "`Stream3_Chat`";
 		<div class="label">HCI-18 Debate on Healthcare</div>
 	</div>
 
-	<div id="wrapper">
-		<div id="menu">
-			<p class="welcome">Stream Chat</p>
-			<div style="clear:both"></div>
-		</div>
-
-		<form name="message" method="POST" action="" onsubmit="event.preventDefault(); chat();">
-			<div id="chatbox" action="">
-
-			</div>
-		<?php if (array_key_exists('login_user', $_SESSION)) { ?>			
-			<div id="in"> 
-				<input name="usermsg" type="text" class="usermsg" />
-				<input name="submitmsg" type="button"  class="submitmsg" value="Send" onclick="chat();"/>
-			</div>
-		<?php } else { ?>
-				You must login to submit to the chat. 
-
-		<?php } ?>
-		</form>
-	</div>
+	<?php include("templates/chat_template.php"); ?>
 
 </div>
 

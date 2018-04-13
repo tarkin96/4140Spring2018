@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <html>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
