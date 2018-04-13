@@ -8,9 +8,9 @@
 			//$('#ContactForm').find('.form_result').html(response);
 			$("#chatbox").empty();
 			$("#chatbox").append(response);
-			if (response == "") {
-				
+			if (response != "") {
 				$("#chatbox").scrollTop($("#chatbox")[0].scrollHeight);
+				//$(document).scrollTop();
 			}
 			//$("#chatbox").append($("#chatbox").scrollHeight);
 		}});
