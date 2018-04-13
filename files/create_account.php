@@ -44,7 +44,8 @@ if (!array_key_exists('login_start', $_SESSION)) {
 					$add_account_result = mysqli_query($db,$add_login_query);
 					if ($add_account_result) {
 						//echo "account added";
-						header('Location: '.$_SESSION['login_start']);
+						//header('Location: '.$_SESSION['login_start']);
+						header('Location: login.php');
 					}
 					
 				}

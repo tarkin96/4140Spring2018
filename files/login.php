@@ -6,7 +6,7 @@
 		//header("Location: login.php");
 	}
 	else {
-		echo $_SERVER['HTTP_REFERER'];
+		//echo $_SERVER['HTTP_REFERER'];
 	}
 	
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -43,7 +43,7 @@
 
 	}
 	else {
-		echo $_SERVER['HTTP_REFERER'];
+		//echo $_SERVER['HTTP_REFERER'];
 		$_SESSION['login_start'] = $_SERVER['HTTP_REFERER'];
 
 	}
