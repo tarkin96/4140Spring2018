@@ -1,6 +1,10 @@
 <?php
 include("config.php");
 include("templates/page_template.php");
+if (!array_key_exists('login_start', $_SESSION)) {
+	$_SESSION['login_start'] = "home_page.php";
+	//header("Location: login.php");
+}
 
 	$error = "";
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -40,7 +44,7 @@ include("templates/page_template.php");
 					$add_account_result = mysqli_query($db,$add_login_query);
 					if ($add_account_result) {
 						//echo "account added";
-						header("Location: login.php");
+						header('Location: '.$_SESSION['login_start']);
 					}
 					
 				}

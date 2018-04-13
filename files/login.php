@@ -2,6 +2,14 @@
 	include("config.php");
 	include("templates/page_template.php");
 	$error = "";
+	if (!array_key_exists('HTTP_REFERER', $_SERVER)) {
+		$_SESSION['login_start'] = "home_page.php";
+		//header("Location: login.php");
+	}
+	else {
+		$_SESSION['login_start'] = $_SERVER['HTTP_REFERER'];
+	}
+	
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
 		// username and password sent from form's POST
 		$inputusername = mysqli_real_escape_string($db,$_POST['username']);
@@ -24,7 +32,7 @@
 				//session_register("myusername");
 				$_SESSION['login_user'] = $inputusername;
 				echo "wade sucks";
-				header("location: home_page.php");
+				header('Location: '.$_SESSION['login_start']);
 			}
 			else {
 				$error = "Your Login Name or Password is invalid";
