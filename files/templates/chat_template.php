@@ -8,6 +8,10 @@
 			//$('#ContactForm').find('.form_result').html(response);
 			$("#chatbox").empty();
 			$("#chatbox").append(response);
+			if (response == "") {
+				var chat = document.getElementById("chatbox");
+				chat.scrollTop = chat.scrollHeight;
+			}
 			//$("#chatbox").append($("#chatbox").scrollHeight);
 		}});
 		
