@@ -5,7 +5,7 @@ session_start();
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 <script type="text/javascript">
-	function chat() {
+/*	function chat() {
 		
 		$.ajax({type:'POST', url: 'chat.php', data:$("[name='message']").serialize(), success: function(response) {
 			//$('#ContactForm').find('.form_result').html(response);
@@ -21,7 +21,7 @@ session_start();
 		//});
 		document.getElementsByName("usermsg")[0].value = "";
 		return false;
-	}
+	}*/
 
 	function submitQuest() {
 		$.ajax({type:'POST', url: 'submitQuest.php', data:$("[name='questsubmit']").serialize(), success: function(response) {
@@ -31,14 +31,14 @@ session_start();
 		}});
 	}
 
-	setInterval(function(){
+/*	setInterval(function(){
 	  	$.ajax({type:'POST', url: 'chat_check.php', data:"", success: function(response) {
 			//$('#ContactForm').find('.form_result').html(response);
 			//$("#chatbox").empty();
 			$("#chatbox").append(response);
 			//$("#chatbox").append($("#chatbox").scrollHeight);
 		}});
-	}, 2000);
+	}, 2000);*/
 </script>
 
 <head>
