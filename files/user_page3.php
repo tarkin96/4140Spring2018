@@ -61,7 +61,7 @@ $_SESSION['Stream_Chat'] = "`Stream3_Chat`";
 
 <div class="bott">
 
-	<div style="display: inline-block;">
+	<div style="display: block;">
 		<div class="eventdesc">
 			<desc>Sandy Hetfield and Eddie Dickinson debate the best implementations of healthcare services at the state level. Sandy states that it is "sad,
 			but true" that our healthcare services are not up to date. Eddie claims that over-spending on public healthcare will lead to "wasted money, and

@@ -61,7 +61,7 @@ $_SESSION['Stream_Chat'] = "`Stream2_Chat`";
 
 <div class="bott">
 
-	<div style="display: inline-block;">
+	<div style="display: block;">
 		<div class="eventdesc">
 			<desc>Governor Ripub Lycan discusses the conflict in Yemen and how it might end with Somalia invading Russia.</desc>
 		</div>
