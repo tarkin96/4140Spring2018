@@ -2,11 +2,13 @@
 	include("config.php");
 	include("templates/page_template.php");
 	$error = "";
-	if (!array_key_exists('HTTP_REFERER', $_SERVER)) {
+	if (!array_key_exists('HTTP_REFERER', $_SERVER) or strpos($_SERVER['HTTP_REFERER'], "login.php") or strpos($_SERVER['HTTP_REFERER'], "create_account.php")) {
 		//header("Location: login.php");
+		
 	}
 	else {
 		//echo $_SERVER['HTTP_REFERER'];
+		$_SESSION['login_start'] = $_SERVER['HTTP_REFERER'];
 	}
 	
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -44,7 +46,7 @@
 	}
 	else {
 		//echo $_SERVER['HTTP_REFERER'];
-		$_SESSION['login_start'] = $_SERVER['HTTP_REFERER'];
+		//$_SESSION['login_start'] = $_SERVER['HTTP_REFERER'];
 
 	}
 ?>

@@ -61,7 +61,7 @@ $_SESSION['Stream_Chat'] = "`Studio_Day_Chat`";
 
 <div class="bott">
 
-	<div style="display: inline-block;">
+	<div style="display: block;">
 		<div class="eventdesc">
 			<desc>The Senate interrogates Mark Zuckerberg in regards to recent data breaches
 			and the nature of user privacy on Facebook. This follows the recent news that Facebook released data on millions of its users 

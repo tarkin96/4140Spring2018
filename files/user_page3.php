@@ -61,7 +61,7 @@ $_SESSION['Stream_Chat'] = "`Stream3_Chat`";
 
 <div class="bott">
 
-	<div style="display: inline-block;">
+	<div style="display: block;">
 		<div class="eventdesc">
 			<desc>Sandy Hetfield and Eddie Dickinson debate the best implementations of healthcare services at the state level. Sandy states that it is "sad,
 			but true" that our healthcare services are not up to date. Eddie claims that over-spending on public healthcare will lead to "wasted money, and
@@ -93,13 +93,13 @@ $_SESSION['Stream_Chat'] = "`Stream3_Chat`";
 		</div>
 	</div>
 
-	<div class ="box" style="width: 40%">
+	<div class ="box" style="width: 40%" name="questionbox">
 		<div class="label" style="display: inline-block">
 			Submit Your Own Question
 		</div>
-		<div class="questsubmit">
-			<textarea name="questtext" type="text" class="questtext"></textarea>
-			<input name="submitquest" type="submit"  class="submitquest" value="Send"/>
+		<div class="questsubmit" name="questsubmit">
+			<textarea name="questtext" type="text" class="questtext" id="questtext"></textarea>
+			<input name="submitquest" type="button"  class="submitquest" value="Send" onclick="submitQuest();"/>
 		</div>
 	</div>
 </span>
